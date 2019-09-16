@@ -1,0 +1,18 @@
+                                <div class="post">
+                                    <div class="item-container">
+                                        <div class="item-caption">
+                                            <div class="item-caption-inner">
+                                                <div class="item-caption-inner1">
+                                                    <a class="example-image-link" href="images/people/$pic_name" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                                                        <i class="fa fa-search"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="images/people/$pic_name" />
+                                    </div>
+                                    <center>$name</center>
+                                    <span>$personal_text</span>
+                                    <br>
+                                    <a class="page-scroll" href="$person_index" target="_blank">learn more ......</a>
+                                </div>
