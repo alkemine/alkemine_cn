@@ -1,0 +1,47 @@
+
+            <tr>
+              <td width="100%" height="60"></td>
+            </tr>
+            <tr>
+              <td>
+                <!--  content $number  -->
+                <table cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                  <tr>
+                    <td width="187" style="vertical-align:top;">
+                      <table cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                        <tr>
+                          <td width="100%" height="6"></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="$paper_href">
+                              <img src="images/publication/$paper_pic_name" border="0" alt="" title="" width="187" height="155" style="display: block;"/>
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td width="40" style="width:40px;"></td>
+                    <td>
+                      <table cellpadding="0" cellspacing="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                        <tr>
+                          <td>
+                            <a href="#" style="color: #676767; font-family: 'Raleway', arial; font-size: 16px; font-weight: 600; text-transform:uppercase; letter-spacing:.5px; line-height:26px; text-decoration:none;">
+                              $paper_name.
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="100%" height="15"></td>
+                        </tr>
+                        <tr>
+                          <td style="color: #8b8b8b; font-family: 'Raleway', arial; font-weight: 400; font-size: 14px; letter-spacing:.5px; line-height:26px;">
+                            $paper_abstract
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
