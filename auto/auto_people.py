@@ -13,6 +13,8 @@ __date__ = "2019/09/16"
 import os
 from string import Template
 
+PIC_PATH = r"G:/homepage_alkemie_group_cn/docs/images/people"
+
 
 def get_temple(fn):
     with open(fn, 'r', encoding='utf-8') as f:
@@ -20,11 +22,21 @@ def get_temple(fn):
     return Template(people_temple)
 
 
-def get_one_person_post(name, personal_text, pic_name=None, person_index='#'):
+def get_one_person_post(name, eng_name, personal_text, email, pic_name=None, person_index='#'):
     __people_temple_fn = os.path.join(os.path.dirname(__file__), 'temples', 'temple_people_post')
     config = get_temple(__people_temple_fn)
+    
+    if pic_name:
+        _pic_name = pic_name
+    else:
+        if os.path.exists(os.path.join(PIC_PATH, '%s.jpg' % eng_name)):
+            _pic_name = '%s.jpg' % eng_name
+        else:
+            _pic_name = 'pic1.jpg'
+        
     variables = {"name": name,
-                 "pic_name": '%s.jpg' % (name if not pic_name else pic_name),
+                 "email": email,
+                 "pic_name": _pic_name,
                  "personal_text": personal_text,
                  "person_index": person_index}
 
@@ -48,7 +60,7 @@ def get_row(data):
     :param data: [col1, col2, col3]
     :return: str
     """
-    assert len(data) == 3
+    assert len(data) <= 5
     all_row = [get_col(i) for i in data]
     __row_temple_fn = os.path.join(os.path.dirname(__file__), 'temples', 'temple_people_row')
     config = get_temple(fn=__row_temple_fn)
@@ -64,6 +76,6 @@ def write_post(fn, data, mode='w'):
 
 if __name__ == '__main__':
     # write_one_person_post(name='GuanjieWang', pic_name='pic1', personal_text='shasfldkfjskld sdgkjds agghaklj')
-    dd = [['GuanjieWang', 'sdlkfjls', 'pic1'], ['sdfs', 'lllll', 'pic1', 'sdklf']]
+    dd = [['王冠杰', 'GuanjieWang', 'sdlkfjls'], ['sdfs', 'lllll', 'sdklf']]
     a = get_row(data=[dd, dd+dd, dd+dd+dd])
     write_post(fn='test', data=a)
