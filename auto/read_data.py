@@ -111,4 +111,10 @@ def graduated():
 
 
 if __name__ == '__main__':
-    undergraduate()
+    # undergraduate()
+    # graduated()
+    # phd()
+    # teacher()
+    # m3()
+    # m2()
+    m1()
