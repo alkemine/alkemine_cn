@@ -1,3 +1,4 @@
+                            <div class="col-md-1-5">
                                 <div class="post">
                                     <div class="item-container">
                                         <div class="item-caption">
@@ -17,3 +18,4 @@
                                     <br>
                                     <a class="page-scroll" href="$person_index" target="_blank">了解更多......</a>
                                 </div>
+                            </div>

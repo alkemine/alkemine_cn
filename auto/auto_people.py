@@ -45,13 +45,13 @@ def get_one_person_post(name, eng_name, personal_text, email, pic_name=None, per
     return _input
 
 
-def get_col(data):
-    all_col = [get_one_person_post(*i) for i in data]
-    __col_temple_fn = os.path.join(os.path.dirname(__file__), 'temples', 'temple_people_col')
-    config = get_temple(fn=__col_temple_fn)
-    variables = {"many_posts": ''.join(all_col)}
-    _input = config.safe_substitute(**variables) + '\n'
-    return _input
+# def get_col(data):
+#     all_col = [get_one_person_post(*i) for i in data]
+#     __col_temple_fn = os.path.join(os.path.dirname(__file__), 'temples', 'temple_people_col')
+#     config = get_temple(fn=__col_temple_fn)
+#     variables = {"many_posts": ''.join(all_col)}
+#     _input = config.safe_substitute(**variables) + '\n'
+#     return _input
 
 
 def get_row(data):
@@ -61,10 +61,21 @@ def get_row(data):
     :return: str
     """
     assert len(data) <= 5
-    all_row = [get_col(i) for i in data]
+    all_row = [get_one_person_post(*i) for i in data]
     __row_temple_fn = os.path.join(os.path.dirname(__file__), 'temples', 'temple_people_row')
     config = get_temple(fn=__row_temple_fn)
     variables = {"many_columns": ''.join(all_row)}
+    _input = config.safe_substitute(**variables) + '\n'
+    return _input
+
+
+def get_all(data, page_name, page_engname):
+    all_data = [get_row(row) for row in data]
+    __all_temple_fn = os.path.join(os.path.dirname(__file__), 'temples', 'temple_people_all')
+    config = get_temple(fn=__all_temple_fn)
+    variables = {"page_name": page_name,
+                 "page_eng_name": page_engname,
+                 "all_rows": ''.join(all_data)}
     _input = config.safe_substitute(**variables) + '\n'
     return _input
 
@@ -76,6 +87,8 @@ def write_post(fn, data, mode='w'):
 
 if __name__ == '__main__':
     # write_one_person_post(name='GuanjieWang', pic_name='pic1', personal_text='shasfldkfjskld sdgkjds agghaklj')
-    dd = [['王冠杰', 'GuanjieWang', 'sdlkfjls'], ['sdfs', 'lllll', 'sdklf']]
-    a = get_row(data=[dd, dd+dd, dd+dd+dd])
+    dd = [['王冠杰', 'GuanjieWang', 'sdlkfjls', 'haha'], ['sdfs', 'lllll', 'sdklf', '123']]
+    dta = [dd, dd+dd, dd+dd+[dd[0]]]
+    a = get_all(data=dta, page_engname='Ph.D', page_name='博士生')
     write_post(fn='test', data=a)
+    print(a)

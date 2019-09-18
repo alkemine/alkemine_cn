@@ -10,11 +10,19 @@ __maintainer__ = 'Guanjie Wang'
 __email__ = "gjwang@buaa.edu.cn"
 __date__ = "2019/09/16"
 
-from auto_people import get_row, write_post
+from auto_people import get_all, write_post
 import pandas as pd
 from copy import deepcopy
 
 EMPTY_INFO = ['...', 'pic1', '...', '...', None, '#']
+
+CN2EN = {"教师": "Teachers",
+         "博士生": "Ph.D",
+         "研究生1年级": "Master 1",
+         "研究生2年级": "Master 2",
+         "研究生3年级": "Master 3",
+         "本科生": "Undergraduate",
+         "已毕业学生": "Graduated"}
 
 
 class OnePerson(object):
@@ -31,70 +39,6 @@ def read_data(fn, type):
     data = [OnePerson(i[1]).data for i in need_process.iterrows()]
     return data
 
-def undergraduate():
-    data = [[EMPTY_INFO, EMPTY_INFO],
-            [EMPTY_INFO],
-            [EMPTY_INFO],
-            [EMPTY_INFO],
-            [EMPTY_INFO]]
-    w = get_row(data=data)
-    write_post(fn='test', data=w)
-
-def teacher():
-    a = read_data(fn='data.csv', type='老师')
-    w = get_row(data=[[a[0]], [a[1]], [a[2]]])
-    write_post(fn='test', data=w)
-    
-def phd():
-    phdall = read_data(fn='data.csv', type='博士生')
-    sss = [a[0] for a in phdall]
-    index_dic = dict(zip(sss, range(len(sss))))
-    data = [[phdall[index_dic['彭琼']], phdall[index_dic['王冠杰']], phdall[index_dic['彭力宇']], phdall[index_dic['张震']]],
-            [phdall[index_dic['于亚东']], phdall[index_dic['黄永达']], EMPTY_INFO, phdall[index_dic['吴忌征']]],
-            [phdall[index_dic['张毕堃']], phdall[index_dic['胡述伟']] ],
-            [EMPTY_INFO, phdall[index_dic['张康']]]]
-    w = get_row(data=data)
-    write_post(fn='test', data=w)
-
-def m3():
-    phdall = read_data(fn='data.csv', type='硕士3年级')
-    sss = [a[0] for a in phdall]
-    index_dic = dict(zip(sss, range(len(sss))))
-    # print(index_dic)
-    # exit()
-    data = [[phdall[index_dic['李杰']], ],
-            [phdall[index_dic['吴浩']], ],
-            [phdall[index_dic['崔京京']], ]]
-    w = get_row(data=data)
-    write_post(fn='test', data=w)
-
-
-def m2():
-    phdall = read_data(fn='data.csv', type='硕士2年级')
-    sss = [a[0] for a in phdall]
-    index_dic = dict(zip(sss, range(len(sss))))
-    # print(index_dic)
-    # exit()
-    data = [[phdall[index_dic['李开旗']], ],
-            [phdall[index_dic['孟喆']], ],
-            [phdall[index_dic['陈启凡']],],]
-    w = get_row(data=data)
-    write_post(fn='test', data=w)
-
-
-def m1():
-    phdall = read_data(fn='data.csv', type='硕士1年级')
-    sss = [a[0] for a in phdall]
-    index_dic = dict(zip(sss, range(len(sss))))
-    # print(index_dic)
-    # exit()
-    data = [[phdall[index_dic['王冰']], phdall[index_dic['宁兴洋']]],
-            [phdall[index_dic['王雷']], phdall[index_dic['王二鹏']]],
-            [phdall[index_dic['刘阳']], ],
-            [phdall[index_dic['孙雨奇']], ],
-            [phdall[index_dic['熊一庭']], ],]
-    w = get_row(data=data)
-    write_post(fn='test', data=w)
 
 def graduated():
     phdall = read_data(fn='data.csv', type='已毕业学生')
@@ -106,15 +50,49 @@ def graduated():
             [phdall[index_dic['郭忠路']], ],
             [phdall[index_dic['程影星']], ],
             ]
-    w = get_row(data=data)
+    w = get_all(data=data)
     write_post(fn='test', data=w)
 
-
+def general(data_name, name_index=None, web_name=None, data=None):
+    if web_name is not None:
+        pass
+    else:
+        web_name = data_name
+    
+    if data is not None:
+        pass
+    else:
+        phdall = read_data(fn='data.csv', type=data_name)
+        sss = [a[0] for a in phdall]
+        print(sss)
+        index_dic = dict(zip(sss, range(len(sss))))
+        data = [[phdall[index_dic[j]] for j in i] for i in name_index]
+    
+    w = get_all(data=data, page_engname=CN2EN[web_name], page_name=web_name)
+    write_post(fn='test', data=w)
+    
+    
 if __name__ == '__main__':
-    # undergraduate()
-    # graduated()
-    # phd()
-    # teacher()
-    # m3()
-    # m2()
-    m1()
+    teach_dict = [['孙志梅', '周健', '缪奶华']]
+    phd_dict = [['李圳', '杨辉', '邱实'],
+                ['彭琼', '于亚东', '刘宾', '张毕堃'],
+                ['王冠杰', '黄永达','胡述伟', '张康', '李强'],
+                ['彭力宇', '甘宇', '张震', '吴忌征']]
+    master1_dict = [['王冰', '王雷', '刘阳', '孙雨奇', '熊一庭'],
+                    ['宁兴洋', '王二鹏', '周润晖']]
+    master2_dict = [['李开旗', '陈启凡', '陈佳天', '孟喆', '张斌晨'],
+                    ['李薇']]
+    master3_dict = [['李杰', '吴浩', '崔京京', '焦静云', '陈明威'],
+                    ['湛晓雪']]
+    
+    master = [master1_dict, master2_dict, master3_dict]
+    undergraduated_dict = [[EMPTY_INFO, EMPTY_INFO, EMPTY_INFO]]
+    graduated_dict = [['郭忠路', '萨百晟', '潘元春', '廖加敏', '程影星'],
+                      []]
+    # general(data_name="老师", web_name="教师", name_index=teach_dict)
+    general(data_name="博士生", name_index=phd_dict)
+    # general(data_name="硕士1年级", web_name="研究生1年级", name_index=master1_dict)
+    # general(data_name="硕士2年级", web_name="研究生2年级", name_index=master2_dict)
+    # general(data_name="硕士3年级", web_name="研究生3年级", name_index=master3_dict)
+    # general(data_name="本科生", web_name="本科生", data=undergraduated_dict)
+    # general(data_name="已毕业学生", web_name="已毕业学生", name_index=graduated_dict)
