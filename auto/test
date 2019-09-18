@@ -173,19 +173,19 @@
                                         <div class="item-caption">
                                             <div class="item-caption-inner">
                                                 <div class="item-caption-inner1">
-                                                    <a class="example-image-link" href="images/people/GuanjieWang.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                                                    <a class="example-image-link" href="images/people/pic1.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
                                                         <i class="fa fa-search"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <img src="images/people/GuanjieWang.jpg" />
+                                        <img src="images/people/pic1.jpg" />
                                     </div>
-                                    <div class="ename">王冠杰</div>
-                                    <div class="eemail">gjwang@buaa.edu.cn</div>
-                                    <div class="person_introduction">研究方向：机器学习神经网络势函数，大规模分子动力学模拟，非晶材料，相变存储材料，第一性原理计算等。ALKEMIE-Matter Studio高通量自动流程计算软件开发负责人。</div>
+                                    <div class="ename">李强</div>
+                                    <div class="eemail">1269261962@qq.com</div>
+                                    <div class="person_introduction">博士二年级在读，主要从事新能源材料方面的研究。</div>
                                     <br>
-                                    <a class="page-scroll" href="https://gjwang.club" target="_blank">了解更多......</a>
+                                    <a class="page-scroll" href="#" target="_blank">了解更多......</a>
                                 </div>
                             </div>
                             <div class="col-md-1-5">
@@ -194,13 +194,13 @@
                                         <div class="item-caption">
                                             <div class="item-caption-inner">
                                                 <div class="item-caption-inner1">
-                                                    <a class="example-image-link" href="images/people/YongdaHuang.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                                                    <a class="example-image-link" href="images/people/yd.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
                                                         <i class="fa fa-search"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <img src="images/people/YongdaHuang.jpg" />
+                                        <img src="images/people/yd.jpg" />
                                     </div>
                                     <div class="ename">黄永达</div>
                                     <div class="eemail">ydhuang@buaa.edu.cn</div>
@@ -259,19 +259,19 @@
                                         <div class="item-caption">
                                             <div class="item-caption-inner">
                                                 <div class="item-caption-inner1">
-                                                    <a class="example-image-link" href="images/people/pic1.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                                                    <a class="example-image-link" href="images/people/GuanjieWang.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
                                                         <i class="fa fa-search"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <img src="images/people/pic1.jpg" />
+                                        <img src="images/people/GuanjieWang.jpg" />
                                     </div>
-                                    <div class="ename">李强</div>
-                                    <div class="eemail">1269261962@qq.com</div>
-                                    <div class="person_introduction">博士二年级在读，主要从事新能源材料方面的研究。</div>
+                                    <div class="ename">王冠杰</div>
+                                    <div class="eemail">gjwang@buaa.edu.cn</div>
+                                    <div class="person_introduction">研究方向：机器学习神经网络势函数，大规模分子动力学模拟，非晶材料，相变存储材料，第一性原理计算等。ALKEMIE-Matter Studio高通量自动流程计算软件开发负责人。</div>
                                     <br>
-                                    <a class="page-scroll" href="#" target="_blank">了解更多......</a>
+                                    <a class="page-scroll" href="https://gjwang.club" target="_blank">了解更多......</a>
                                 </div>
                             </div>
 
