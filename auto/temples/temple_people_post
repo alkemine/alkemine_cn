@@ -1,3 +1,4 @@
+                            <div class="col-md-1-5">
                                 <div class="post">
                                     <div class="item-container">
                                         <div class="item-caption">
@@ -11,8 +12,10 @@
                                         </div>
                                         <img src="images/people/$pic_name" />
                                     </div>
-                                    <center>$name</center>
-                                    <span>$personal_text</span>
+                                    <div class="ename">$name</div>
+                                    <div class="eemail">$email</div>
+                                    <div class="person_introduction">$personal_text</div>
                                     <br>
-                                    <a class="page-scroll" href="$person_index" target="_blank">learn more ......</a>
+                                    <a class="page-scroll" href="$person_index" target="_blank">了解更多......</a>
                                 </div>
+                            </div>

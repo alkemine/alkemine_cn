@@ -419,6 +419,24 @@ a.btn:focus{opacity: 0.9;}
     -o-transition: all .5s ease; /* Opera */
     transition: all .5s ease;
 }
+.ename{
+    font-size:25px;
+    font-weight:bold;
+    text-align: center;
+    line-height: 30px;
+    overflow: visible;
+}
+.eemail{
+    font-size:13px;
+    font-weight:bold;
+    text-align: center;
+    line-height: 28px;
+    overflow: auto;
+}
+.person_introduction{
+    height: 180px;
+    overflow: auto;
+}
 .item-container .item-caption {
 	position: absolute;
 	top: 0;

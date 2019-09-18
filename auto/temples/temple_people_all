@@ -1,0 +1,19 @@
+<!-- /////////////////////////////////////////Content -->
+	<div id="page-content">
+
+		<!-- ////////////Content Box -->
+		<section class="box-content box-style-1">
+			<div class="container">
+				<div class="row heading">
+					 <div class="col-lg-12">
+	                    <h2>$page_name</h2>
+	                    <hr class="line02">
+                    	<div class="intro">$page_eng_name</div>
+	                </div>
+				</div>
+
+$all_rows
+
+			</div>
+		</section>
+    </div>
