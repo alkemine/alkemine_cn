@@ -73,7 +73,7 @@ def general(data_name, name_index=None, web_name=None, data=None):
     
     
 if __name__ == '__main__':
-    teach_dict = [['孙志梅', '周健', '缪奶华']]
+    teach_dict = [['孙志梅', '周健', '缪奶华', '司晨', '祝令刚']]
     phd_dict = [['李圳', '杨辉', '邱实'],
                 ['彭琼', '于亚东', '刘宾', '张毕堃'],
                 ['李强', '黄永达','胡述伟', '张康', '王冠杰'],
@@ -89,8 +89,8 @@ if __name__ == '__main__':
     undergraduated_dict = [[EMPTY_INFO, EMPTY_INFO, EMPTY_INFO]]
     graduated_dict = [['郭忠路', '萨百晟', '潘元春', '廖加敏', '程影星'],
                       []]
-    # general(data_name="老师", web_name="教师", name_index=teach_dict)
-    general(data_name="博士生", name_index=phd_dict)
+    general(data_name="老师", web_name="教师", name_index=teach_dict)
+    # general(data_name="博士生", name_index=phd_dict)
     # general(data_name="硕士1年级", web_name="研究生1年级", name_index=master1_dict)
     # general(data_name="硕士2年级", web_name="研究生2年级", name_index=master2_dict)
     # general(data_name="硕士3年级", web_name="研究生3年级", name_index=master3_dict)
