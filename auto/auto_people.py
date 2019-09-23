@@ -22,7 +22,8 @@ def get_temple(fn):
     return Template(people_temple)
 
 
-def get_one_person_post(name, eng_name, personal_text, email, pic_name=None, person_index='#'):
+def get_one_person_post(name, eng_name, personal_text, email, pic_name=None, person_index='#',
+                        intro_style='person_introduction'):
     __people_temple_fn = os.path.join(os.path.dirname(__file__), 'temples', 'temple_people_post')
     config = get_temple(__people_temple_fn)
     
@@ -38,7 +39,8 @@ def get_one_person_post(name, eng_name, personal_text, email, pic_name=None, per
                  "email": email,
                  "pic_name": _pic_name,
                  "personal_text": personal_text,
-                 "person_index": person_index}
+                 "person_index": person_index,
+                 "intro_style": intro_style}
 
     _input = config.safe_substitute(**variables) + '\n'
     # write_post('test', _input, 'w')

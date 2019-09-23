@@ -437,6 +437,10 @@ a.btn:focus{opacity: 0.9;}
     height: 180px;
     overflow: auto;
 }
+.person_tech_introduction{
+    height: 280px;
+    overflow: auto;
+}
 .item-container .item-caption {
 	position: absolute;
 	top: 0;

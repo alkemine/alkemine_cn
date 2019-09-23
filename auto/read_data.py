@@ -27,16 +27,28 @@ CN2EN = {"教师": "Teachers",
 
 class OnePerson(object):
     
-    def __init__(self, data):
+    def __init__(self, data, style=0):
+        # style == 1: 个人简介高度为280px， 否则为180px
         assert isinstance(data, pd.Series)
+        if style:
+            intro_style = 'person_tech_introduction'
+        else:
+            intro_style = 'person_introduction'
+            
         homepage_for_person = data['个人主页地址'] if isinstance(data['个人主页地址'], str) else '#'
-        self.data = [data['中文姓名'], data['英文姓名'], data['自我介绍100字以内'], data['个人邮箱'], None, homepage_for_person]
+        self.data = [data['中文姓名'], data['英文姓名'], data['自我介绍100字以内'], data['个人邮箱'], None,
+                     homepage_for_person, intro_style]
         
 
 def read_data(fn, type):
     a = pd.read_csv(fn)
     need_process = a[a['职位'] == type]
-    data = [OnePerson(i[1]).data for i in need_process.iterrows()]
+    if type == '老师':
+        intro_style = 1
+    else:
+        intro_style = 0
+        
+    data = [OnePerson(i[1], style=intro_style).data for i in need_process.iterrows()]
     return data
 
 
@@ -52,6 +64,7 @@ def graduated():
             ]
     w = get_all(data=data)
     write_post(fn='test', data=w)
+
 
 def general(data_name, name_index=None, web_name=None, data=None):
     if web_name is not None:
@@ -89,8 +102,8 @@ if __name__ == '__main__':
     undergraduated_dict = [[EMPTY_INFO, EMPTY_INFO, EMPTY_INFO]]
     graduated_dict = [['郭忠路', '萨百晟', '潘元春', '廖加敏', '程影星'],
                       []]
-    general(data_name="老师", web_name="教师", name_index=teach_dict)
-    # general(data_name="博士生", name_index=phd_dict)
+    # general(data_name="老师", web_name="教师", name_index=teach_dict)
+    general(data_name="博士生", name_index=phd_dict)
     # general(data_name="硕士1年级", web_name="研究生1年级", name_index=master1_dict)
     # general(data_name="硕士2年级", web_name="研究生2年级", name_index=master2_dict)
     # general(data_name="硕士3年级", web_name="研究生3年级", name_index=master3_dict)

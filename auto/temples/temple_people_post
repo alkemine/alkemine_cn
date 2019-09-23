@@ -14,7 +14,7 @@
                                     </div>
                                     <div class="ename">$name</div>
                                     <div class="eemail">$email</div>
-                                    <div class="person_introduction">$personal_text</div>
+                                    <div class="$intro_style">$personal_text</div>
                                     <br>
                                     <a class="page-scroll" href="$person_index" target="_blank">了解更多......</a>
                                 </div>
