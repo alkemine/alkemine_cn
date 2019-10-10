@@ -6,9 +6,9 @@
 			<div class="container">
 				<div class="row heading">
 					 <div class="col-lg-12">
-	                    <h2>博士生</h2>
+	                    <h2>研究生1年级</h2>
 	                    <hr class="line02">
-                    	<div class="intro">Ph.D</div>
+                    	<div class="intro">Master 1</div>
 	                </div>
 				</div>
 
@@ -19,17 +19,17 @@
                                         <div class="item-caption">
                                             <div class="item-caption-inner">
                                                 <div class="item-caption-inner1">
-                                                    <a class="example-image-link" href="images/people/pic1.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                                                    <a class="example-image-link" href="images/people/BingWang.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
                                                         <i class="fa fa-search"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <img src="images/people/pic1.jpg" />
+                                        <img src="images/people/BingWang.jpg" />
                                     </div>
-                                    <div class="ename">李圳</div>
-                                    <div class="eemail">zli@buaa.edu.cn</div>
-                                    <div class="person_introduction">主要从事相变存储材料和热电材料的第一原理计算和AIMD模拟。</div>
+                                    <div class="ename">王冰</div>
+                                    <div class="eemail">wangb0701@buaa.edu.cn</div>
+                                    <div class="person_introduction">本人本科毕业于北京航空航天大学，目前在ALKEMIE课题组从事GST相变存储材料相关研究。</div>
                                     <br>
                                     <a class="page-scroll" href="#" target="_blank">了解更多......</a>
                                 </div>
@@ -40,62 +40,17 @@
                                         <div class="item-caption">
                                             <div class="item-caption-inner">
                                                 <div class="item-caption-inner1">
-                                                    <a class="example-image-link" href="images/people/pic1.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                                                    <a class="example-image-link" href="images/people/LeiWang.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
                                                         <i class="fa fa-search"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <img src="images/people/pic1.jpg" />
+                                        <img src="images/people/LeiWang.jpg" />
                                     </div>
-                                    <div class="ename">杨辉</div>
-                                    <div class="eemail">yanghui_icme@buaa.edu.cn</div>
-                                    <div class="person_introduction">本科毕业于北京科技大学，硕博就读于北京航空航天大学。主要从事金属体系里缺陷对机械性能的研究，如位错分解，界面剪切等，利用分子动力学模拟方法进行大尺度运算。</div>
-                                    <br>
-                                    <a class="page-scroll" href="序号43_12_1_简历白底.jpg" target="_blank">了解更多......</a>
-                                </div>
-                            </div>
-                            <div class="col-md-1-5">
-                                <div class="post">
-                                    <div class="item-container">
-                                        <div class="item-caption">
-                                            <div class="item-caption-inner">
-                                                <div class="item-caption-inner1">
-                                                    <a class="example-image-link" href="images/people/ShiQiu.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-                                                        <i class="fa fa-search"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <img src="images/people/ShiQiu.jpg" />
-                                    </div>
-                                    <div class="ename">邱实</div>
-                                    <div class="eemail">shiqiu_qs@buaa.edu.cn</div>
-                                    <div class="person_introduction">邱实，2016级博士生，目前主要从事高熵合金力学性质的研究，研究手段涉及第一性原理和分子动力学。</div>
-                                    <br>
-                                    <a class="page-scroll" href="#" target="_blank">了解更多......</a>
-                                </div>
-                            </div>
-
-						</div>
-                        <div class="row">
-                            <div class="col-md-1-5">
-                                <div class="post">
-                                    <div class="item-container">
-                                        <div class="item-caption">
-                                            <div class="item-caption-inner">
-                                                <div class="item-caption-inner1">
-                                                    <a class="example-image-link" href="images/people/QiongPeng.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-                                                        <i class="fa fa-search"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <img src="images/people/QiongPeng.jpg" />
-                                    </div>
-                                    <div class="ename">彭琼</div>
-                                    <div class="eemail">qpeng@buaa.edu.cn</div>
-                                    <div class="person_introduction">研究方向：表面和界面工程对纳米材料的结构、力学、光学、电化学性质的调控，及其在柔性可穿戴电子器件、锂电池能源存储设备、光电催化水分解产氢、燃料电池电催化中的应用探索。发表文章：2016年-2019年，以第一作者或共同一作身份已在中科院大类分区二区以上期刊（ACS Appl. Mater. Interfaces、Nano Res.、JPCC等）发表了8篇学术论文。</div>
+                                    <div class="ename">王雷</div>
+                                    <div class="eemail">15601233733@163.com</div>
+                                    <div class="person_introduction">2019级研究生，我自己知道这里不是我的终点而是我的起点，需要学习与努力的地方还很多，希望与实验室共同成长，共同进步。</div>
                                     <br>
                                     <a class="page-scroll" href="#" target="_blank">了解更多......</a>
                                 </div>
@@ -106,17 +61,17 @@
                                         <div class="item-caption">
                                             <div class="item-caption-inner">
                                                 <div class="item-caption-inner1">
-                                                    <a class="example-image-link" href="images/people/YadongYu.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                                                    <a class="example-image-link" href="images/people/YangLiu.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
                                                         <i class="fa fa-search"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <img src="images/people/YadongYu.jpg" />
+                                        <img src="images/people/YangLiu.jpg" />
                                     </div>
-                                    <div class="ename">于亚东</div>
-                                    <div class="eemail">ydyu16@buaa.edu.cn</div>
-                                    <div class="person_introduction">于亚东，17级博士生，导师：孙志梅教授，研究兴趣主要集中在二维过渡金属化合物材料在能源存储和转化中应用的第一性原理研究。</div>
+                                    <div class="ename">刘阳</div>
+                                    <div class="eemail">liuyang2019@buaa.edu.cn</div>
+                                    <div class="person_introduction">刘阳，男，1997年出生于河南洛阳。北京航空航天大学材料科学与工程学院材料物理与化学系在读研究生，方向为计算材料学。</div>
                                     <br>
                                     <a class="page-scroll" href="#" target="_blank">了解更多......</a>
                                 </div>
@@ -127,17 +82,17 @@
                                         <div class="item-caption">
                                             <div class="item-caption-inner">
                                                 <div class="item-caption-inner1">
-                                                    <a class="example-image-link" href="images/people/pic1.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                                                    <a class="example-image-link" href="images/people/YuqiSun.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
                                                         <i class="fa fa-search"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <img src="images/people/pic1.jpg" />
+                                        <img src="images/people/YuqiSun.jpg" />
                                     </div>
-                                    <div class="ename">刘宾</div>
-                                    <div class="eemail">binliu@buaa.edu.cn</div>
-                                    <div class="person_introduction">主要从事超高速，低能耗碲化物相变存储材料及器件性能方面的研究</div>
+                                    <div class="ename">孙雨奇</div>
+                                    <div class="eemail">1041847987@qq.com</div>
+                                    <div class="person_introduction">孙雨奇，北京航空航天大学材料科学与工程学院ALKEMIE课题组研一学生，于2019年9月份入学。本科山东大学材料科学与工程学院材料物理专业基地班，本科毕业设计进行了Cr-C金属间化合物的力学性质的计算。</div>
                                     <br>
                                     <a class="page-scroll" href="#" target="_blank">了解更多......</a>
                                 </div>
@@ -148,17 +103,17 @@
                                         <div class="item-caption">
                                             <div class="item-caption-inner">
                                                 <div class="item-caption-inner1">
-                                                    <a class="example-image-link" href="images/people/BikunZhang.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                                                    <a class="example-image-link" href="images/people/YitingXiong.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
                                                         <i class="fa fa-search"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <img src="images/people/BikunZhang.jpg" />
+                                        <img src="images/people/YitingXiong.jpg" />
                                     </div>
-                                    <div class="ename">张毕堃</div>
-                                    <div class="eemail">by1701125@buaa.edu.cn</div>
-                                    <div class="person_introduction">本人本科毕业于中南大学材料学院，自2017年起以直博生身份在北航ALKEMIE课题组从事第一性原理计算研究，目前专注于材料的催化性能研究。</div>
+                                    <div class="ename">熊一庭</div>
+                                    <div class="eemail">xiongyt@buaa.edu.cn</div>
+                                    <div class="person_introduction">熊一庭，男，硕士一年级。在日后的学术生涯中，我会毫不懈怠，积极锻炼自己的能力，学有所成！</div>
                                     <br>
                                     <a class="page-scroll" href="#" target="_blank">了解更多......</a>
                                 </div>
@@ -180,9 +135,9 @@
                                         </div>
                                         <img src="images/people/pic1.jpg" />
                                     </div>
-                                    <div class="ename">李强</div>
-                                    <div class="eemail">1269261962@qq.com</div>
-                                    <div class="person_introduction">博士二年级在读，主要从事新能源材料方面的研究。</div>
+                                    <div class="ename">宁兴洋</div>
+                                    <div class="eemail">1254398922@qq.com</div>
+                                    <div class="person_introduction">本科毕业于东北大学冶金工程专业，2019.09成为北航材料学院硕士研究生。本科期间发表一篇学术论文《不锈钢渣矿化固定CO2的实验研究》。</div>
                                     <br>
                                     <a class="page-scroll" href="#" target="_blank">了解更多......</a>
                                 </div>
@@ -193,17 +148,17 @@
                                         <div class="item-caption">
                                             <div class="item-caption-inner">
                                                 <div class="item-caption-inner1">
-                                                    <a class="example-image-link" href="images/people/pic1.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                                                    <a class="example-image-link" href="images/people/ErpengWang.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
                                                         <i class="fa fa-search"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <img src="images/people/pic1.jpg" />
+                                        <img src="images/people/ErpengWang.jpg" />
                                     </div>
-                                    <div class="ename">黄永达</div>
-                                    <div class="eemail">ydhuang@buaa.edu.cn</div>
-                                    <div class="person_introduction">本科毕业于南京航空航天大学。硕士，博士均就读于北京航空航天大学。目前主要研究内容为声子输运的第一性原理计算。</div>
+                                    <div class="ename">王二鹏</div>
+                                    <div class="eemail">erpengwang@buaa.edu.cn</div>
+                                    <div class="person_introduction">王二鹏，中共党员，材料学院研一学生。本科就读于广西大学资源环境与材料学院。</div>
                                     <br>
                                     <a class="page-scroll" href="#" target="_blank">了解更多......</a>
                                 </div>
@@ -214,146 +169,17 @@
                                         <div class="item-caption">
                                             <div class="item-caption-inner">
                                                 <div class="item-caption-inner1">
-                                                    <a class="example-image-link" href="images/people/HuShuweiWilly.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
+                                                    <a class="example-image-link" href="images/people/RunhuiZhou.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
                                                         <i class="fa fa-search"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <img src="images/people/HuShuweiWilly.jpg" />
+                                        <img src="images/people/RunhuiZhou.jpg" />
                                     </div>
-                                    <div class="ename">胡述伟</div>
-                                    <div class="eemail">swhu_mse@buaa.edu.cn</div>
-                                    <div class="person_introduction">胡述伟师从孙志梅教授，主要从事Sb₂Te₃相变存储材料结构和性能第一性原理计算工作，并在新型相变存储材料的高通量预测筛选领域进行研究探索。</div>
-                                    <br>
-                                    <a class="page-scroll" href="https://www.researchgate.net/profile/Shuwei_Hu3" target="_blank">了解更多......</a>
-                                </div>
-                            </div>
-                            <div class="col-md-1-5">
-                                <div class="post">
-                                    <div class="item-container">
-                                        <div class="item-caption">
-                                            <div class="item-caption-inner">
-                                                <div class="item-caption-inner1">
-                                                    <a class="example-image-link" href="images/people/KangZhang.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-                                                        <i class="fa fa-search"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <img src="images/people/KangZhang.jpg" />
-                                    </div>
-                                    <div class="ename">张康</div>
-                                    <div class="eemail">kangz@buaa.edu.cn</div>
-                                    <div class="person_introduction">本科毕业于山东科技大学，博士现就读于北京航空航天大学材料物理与化学系。主要研究方向为计算材料学。</div>
-                                    <br>
-                                    <a class="page-scroll" href="#" target="_blank">了解更多......</a>
-                                </div>
-                            </div>
-                            <div class="col-md-1-5">
-                                <div class="post">
-                                    <div class="item-container">
-                                        <div class="item-caption">
-                                            <div class="item-caption-inner">
-                                                <div class="item-caption-inner1">
-                                                    <a class="example-image-link" href="images/people/GuanjieWang.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-                                                        <i class="fa fa-search"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <img src="images/people/GuanjieWang.jpg" />
-                                    </div>
-                                    <div class="ename">王冠杰</div>
-                                    <div class="eemail">gjwang@buaa.edu.cn</div>
-                                    <div class="person_introduction">研究方向：机器学习神经网络势函数，大规模分子动力学模拟，非晶材料，相变存储材料，第一性原理计算等。ALKEMIE-Matter Studio高通量自动流程计算软件及ALKEMIE课题组官方网站开发负责人。</div>
-                                    <br>
-                                    <a class="page-scroll" href="https://gjwang.club" target="_blank">了解更多......</a>
-                                </div>
-                            </div>
-
-						</div>
-                        <div class="row">
-                            <div class="col-md-1-5">
-                                <div class="post">
-                                    <div class="item-container">
-                                        <div class="item-caption">
-                                            <div class="item-caption-inner">
-                                                <div class="item-caption-inner1">
-                                                    <a class="example-image-link" href="images/people/LiyuPeng.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-                                                        <i class="fa fa-search"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <img src="images/people/LiyuPeng.jpg" />
-                                    </div>
-                                    <div class="ename">彭力宇</div>
-                                    <div class="eemail">lypeng@buaa.edu.cn</div>
-                                    <div class="person_introduction">目前主要研究方向为热电材料和相变材料，Alkemi-Matter Studio核心开发人员，负责建模和可视化等模块的编写。</div>
-                                    <br>
-                                    <a class="page-scroll" href="#" target="_blank">了解更多......</a>
-                                </div>
-                            </div>
-                            <div class="col-md-1-5">
-                                <div class="post">
-                                    <div class="item-container">
-                                        <div class="item-caption">
-                                            <div class="item-caption-inner">
-                                                <div class="item-caption-inner1">
-                                                    <a class="example-image-link" href="images/people/pic1.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-                                                        <i class="fa fa-search"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <img src="images/people/pic1.jpg" />
-                                    </div>
-                                    <div class="ename">甘宇</div>
-                                    <div class="eemail">yugan@buaa.edu.cn</div>
-                                    <div class="person_introduction">博士研究生，研究领域主要是是相变材料。</div>
-                                    <br>
-                                    <a class="page-scroll" href="#" target="_blank">了解更多......</a>
-                                </div>
-                            </div>
-                            <div class="col-md-1-5">
-                                <div class="post">
-                                    <div class="item-container">
-                                        <div class="item-caption">
-                                            <div class="item-caption-inner">
-                                                <div class="item-caption-inner1">
-                                                    <a class="example-image-link" href="images/people/ZhenZhang.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-                                                        <i class="fa fa-search"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <img src="images/people/ZhenZhang.jpg" />
-                                    </div>
-                                    <div class="ename">张震</div>
-                                    <div class="eemail">BY1901053@buaa.edu.cn</div>
-                                    <div class="person_introduction">2019年进入北航攻读博士学位，现于材料学院孙志梅教授课题组研究学习，研究方向为相变存储材料及相关材料计算。</div>
-                                    <br>
-                                    <a class="page-scroll" href="#" target="_blank">了解更多......</a>
-                                </div>
-                            </div>
-                            <div class="col-md-1-5">
-                                <div class="post">
-                                    <div class="item-container">
-                                        <div class="item-caption">
-                                            <div class="item-caption-inner">
-                                                <div class="item-caption-inner1">
-                                                    <a class="example-image-link" href="images/people/pic1.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-                                                        <i class="fa fa-search"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <img src="images/people/pic1.jpg" />
-                                    </div>
-                                    <div class="ename">吴忌征</div>
-                                    <div class="eemail">wujizheng@buaa.edu.cn</div>
-                                    <div class="person_introduction">本人喜欢数学、打篮球，看NBA，看书，喜欢探究一些有规律的东西，但也时常粗心大意。希望能在课题组的学习生活中克服缺点，做一个健康快乐的自己。</div>
+                                    <div class="ename">周润晖</div>
+                                    <div class="eemail">zhourunhui1024@163.com</div>
+                                    <div class="person_introduction">我是一个乐观开朗的学生。有幸加入孙老师的课题组，跟随祝老师学习。对待学业我的态度比较端正认真，课余时间也会培养自己的个人爱好，努力做到全面发展。</div>
                                     <br>
                                     <a class="page-scroll" href="#" target="_blank">了解更多......</a>
                                 </div>

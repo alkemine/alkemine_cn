@@ -101,10 +101,10 @@ if __name__ == '__main__':
     master = [master1_dict, master2_dict, master3_dict]
     undergraduated_dict = [[EMPTY_INFO, EMPTY_INFO, EMPTY_INFO]]
     graduated_dict = [['郭忠路', '萨百晟', '潘元春', '廖加敏', '程影星'],
-                      []]
+                      ['张临川', '张英干', '苏忠亮', '丁宗财', '林道斌']]
     # general(data_name="老师", web_name="教师", name_index=teach_dict)
-    general(data_name="博士生", name_index=phd_dict)
-    # general(data_name="硕士1年级", web_name="研究生1年级", name_index=master1_dict)
+    # general(data_name="博士生", name_index=phd_dict)
+    general(data_name="硕士1年级", web_name="研究生1年级", name_index=master1_dict)
     # general(data_name="硕士2年级", web_name="研究生2年级", name_index=master2_dict)
     # general(data_name="硕士3年级", web_name="研究生3年级", name_index=master3_dict)
     # general(data_name="本科生", web_name="本科生", data=undergraduated_dict)
