@@ -95,9 +95,9 @@ def run():
         final.append(get_each_year_paper(i, tmpcontent))
 
     wri = get_all_paper('\n'.join(final))
-    write_post('test.html', wri, 'w')
-
-
+    a = '\\'.join(os.getcwd().split('\\')[:-1])
+    final_path = os.path.join(a, 'docs', 'publications_cite.html')
+    write_post(final_path, wri, 'w')
 
 
 if __name__ == '__main__':
