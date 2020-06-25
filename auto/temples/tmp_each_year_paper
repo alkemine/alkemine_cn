@@ -1,0 +1,8 @@
+<div class="col-sm-12">
+    <h2 class="article-title" style="padding-left:25px">$year</h2>	
+	<ul>
+        <div style="padding:1rem">
+			$papers
+        </div>
+	</ul>
+</div>

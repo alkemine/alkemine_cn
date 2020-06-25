@@ -1,0 +1,4 @@
+<li style="color:black">
+	<b> $cite_contene <a href="$href" target="_blank" style="color:#D98880; font-weight: 600">$doi</a> 
+	</b>
+</li>
