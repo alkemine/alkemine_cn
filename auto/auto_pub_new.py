@@ -52,7 +52,7 @@ def get_one_paper(cite_contene, href):
 
 def read_data():
     import pandas as pd
-    a = pd.read_csv('prof-sun-all-paper.csv')
+    a = pd.read_csv('prof-sun-all-paper-2020.csv')
     format_str = '%s, %s, %s. %s (%s).'
     lll = defaultdict(list)
     for i in a.iterrows():
@@ -62,11 +62,11 @@ def read_data():
         title = ' '.join(str(tmp_i['题目']).strip().split('_'))
 
         vnp = []
-        if str(tmp_i['volume，没有填-']).strip() != '-':
+        if str(tmp_i['volume，没有填-']).strip() != '-' and str(tmp_i['volume，没有填-']).strip() != '_':
             vnp.append(str(tmp_i['volume，没有填-']).strip()),
-        if str(tmp_i['number，没有填-']).strip() != '-':
+        if str(tmp_i['number，没有填-']).strip() != '-' and str(tmp_i['number，没有填-']).strip() != '_':
             vnp.append(str(tmp_i['number，没有填-']).strip())
-        if str(tmp_i['页码']).strip() != '-':
+        if str(tmp_i['页码']).strip() != '-' and str(tmp_i['页码']).strip() != '_':
             vnp.append(str(tmp_i['页码']).strip())
 
         ttt = format_str % (all_authors,
@@ -83,8 +83,8 @@ def run():
     content = read_data()
     final = []
     for i in range(2020, 1997, -1):
-        if i==2020:
-            content['2020'] = [('loading', '......')]
+        # if i==2020:
+        #     content['2020'] = [('loading', '......')]
 
         each_pp = content[str(i)]
         tmmm = []
