@@ -62,7 +62,7 @@ def get_row(data):
     :param data: [col1, col2, col3]
     :return: str
     """
-    assert len(data) <= 5
+    # assert len(data) <= 5
     all_row = [get_one_person_post(*i) for i in data]
     __row_temple_fn = os.path.join(os.path.dirname(__file__), 'temples', 'temple_people_row')
     config = get_temple(fn=__row_temple_fn)

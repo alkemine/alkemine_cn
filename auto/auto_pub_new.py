@@ -11,7 +11,7 @@ __email__ = "gjwang@buaa.edu.cn"
 __date__ = "2020/06/25"
 
 import os
-from auto_people import write_post
+from temple_auto_people import write_post
 from collections import defaultdict
 from string import Template
 
@@ -21,6 +21,7 @@ def get_temple(fn):
         people_temple = f.read()
     return Template(people_temple)
 
+
 def get_all_paper(main_content):
     __paper_temple_fn = os.path.join(os.path.dirname(__file__), 'temples', 'tmp_publication')
     config = get_temple(__paper_temple_fn)
@@ -29,6 +30,7 @@ def get_all_paper(main_content):
     _input = config.safe_substitute(**variables) + '\n'
     write_post('test.html', _input, 'w')
     return _input
+
 
 def get_each_year_paper(year, content):
     __paper_temple_fn = os.path.join(os.path.dirname(__file__), 'temples', 'tmp_each_year_paper')
@@ -49,6 +51,7 @@ def get_one_paper(cite_contene, href):
 
     _input = config.safe_substitute(**variables) + '\n'
     return _input
+
 
 def read_data():
     import pandas as pd

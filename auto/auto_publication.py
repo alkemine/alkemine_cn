@@ -11,7 +11,7 @@ __email__ = "gjwang@buaa.edu.cn"
 __date__ = "2019/09/16"
 
 import os
-from auto_people import get_temple, write_post
+from temple_auto_people import get_temple, write_post
 
 
 def get_one_paper(pic_name, paper_name, paper_abstract, paper_href='#', num='1'):

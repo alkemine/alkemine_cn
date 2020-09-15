@@ -1,3 +1,65 @@
+<html>
+<head>
+  <!-- META DATA -->
+  <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="ALKEMIE Members">
+    <meta name="author" content="Guanjie Wang">
+
+  <title>Masters of ALKEMIE</title>
+  
+  <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/people_css/bootstrap.min.css"  type="text/css">
+  
+  <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/people_css/style.css">
+  
+  <link rel="stylesheet" href="css/people_css/lightbox.css">
+  <link rel="stylesheet" href="css/people_css/five_col.css">
+
+  <!-- Custom Fonts -->
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+  
+</head>
+
+ <body>
+<header>
+
+  <!-- /////////////////////////////////////////Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                
+                <h1 class="navbar-brand page-scroll">
+          <a href="#top">ALKEMIE</a>
+        </h1>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html" style="color:#D98880; font-weight: 800">Back</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+</header>
+
 <!-- /////////////////////////////////////////Content -->
 	<div id="page-content">
 
@@ -17,3 +79,7 @@ $all_rows
 			</div>
 		</section>
     </div>
+
+
+</body>
+</html>
