@@ -13,7 +13,7 @@ __date__ = "2019/09/16"
 import os
 from string import Template
 
-PIC_PATH = r"G:/homepage_alkemie_group_cn/docs/images/people"
+PIC_PATH = r"../docs/images/people"
 
 
 def get_temple(fn):
