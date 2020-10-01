@@ -28,7 +28,7 @@ def get_all_paper(main_content):
     variables = {"main_content": main_content}
 
     _input = config.safe_substitute(**variables) + '\n'
-    write_post('test.html', _input, 'w')
+    # write_post('test.html', _input, 'w')
     return _input
 
 
@@ -73,7 +73,7 @@ def read_data():
         if ADDED:
             pdf_path = 'publications/%s' % pdf_name
         else:
-            pdf_path = 'No authority'
+            pdf_path = 'login/login.html'
         if not (pdf_name in all_files):
             print(pdf_name)
         
