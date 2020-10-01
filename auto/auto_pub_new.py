@@ -70,7 +70,10 @@ def read_data():
         title = ' '.join(str(tmp_i['题目']).strip().split('_'))
         pdf_name = str(tmp_i['pdf全称（pdf中空格替换为英文下划线_）']).strip()
         pdf_name =  pdf_name + '.pdf' if not str(pdf_name).endswith('.pdf') else pdf_name
-        pdf_path = 'publications/%s' % pdf_name
+        if ADDED:
+            pdf_path = 'publications/%s' % pdf_name
+        else:
+            pdf_path = 'No authority'
         if not (pdf_name in all_files):
             print(pdf_name)
         
@@ -114,4 +117,5 @@ def run():
 
 
 if __name__ == '__main__':
+    ADDED = False
     run()
