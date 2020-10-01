@@ -42,12 +42,13 @@ def get_each_year_paper(year, content):
     return _input
 
 
-def get_one_paper(cite_contene, href):
+def get_one_paper(cite_contene, href, pdf_path="#"):
     __paper_temple_fn = os.path.join(os.path.dirname(__file__), 'temples', 'tmp_each_paper')
     config = get_temple(__paper_temple_fn)
     variables = {"cite_contene": cite_contene,
                  "href": href,
-                 "doi": href}
+                 "doi": href,
+                 "local_pdf_path": pdf_path}
 
     _input = config.safe_substitute(**variables) + '\n'
     return _input
@@ -58,12 +59,21 @@ def read_data():
     a = pd.read_csv('prof-sun-all-paper-2020.csv')
     format_str = '%s, %s, %s. %s (%s).'
     lll = defaultdict(list)
+    # __pdf_path = os.path.join('\\'.join(os.getcwd().split('\\')[:-1]), 'docs', 'publications', pdf_name)
+    __pdf_path = os.path.join('\\'.join(os.getcwd().split('\\')[:-1]), 'docs', 'publications')
+
+    all_files = os.listdir(__pdf_path)
     for i in a.iterrows():
         tmp_i = i[1]
         year = str(tmp_i['年份']).strip()
         all_authors = ', '.join(str(tmp_i['所有作者（以英文逗号隔开）']).strip().split(','))
         title = ' '.join(str(tmp_i['题目']).strip().split('_'))
-
+        pdf_name = str(tmp_i['pdf全称（pdf中空格替换为英文下划线_）']).strip()
+        pdf_name =  pdf_name + '.pdf' if not str(pdf_name).endswith('.pdf') else pdf_name
+        pdf_path = 'publications/%s' % pdf_name
+        if not (pdf_name in all_files):
+            print(pdf_name)
+        
         vnp = []
         if str(tmp_i['volume，没有填-']).strip() != '-' and str(tmp_i['volume，没有填-']).strip() != '_':
             vnp.append(str(tmp_i['volume，没有填-']).strip()),
@@ -77,7 +87,7 @@ def read_data():
                             str(tmp_i['期刊']).strip(),
                             ','.join(vnp),
                             year)
-        lll[year].append((ttt, str(tmp_i['原文链接']).strip()))
+        lll[year].append((ttt, str(tmp_i['原文链接']).strip(), pdf_path))
 
     return lll
 
@@ -99,7 +109,7 @@ def run():
 
     wri = get_all_paper('\n'.join(final))
     a = '\\'.join(os.getcwd().split('\\')[:-1])
-    final_path = os.path.join(a, 'docs', 'publications_cite.html')
+    final_path = os.path.join(a, 'docs', 'publications_cite1111.html')
     write_post(final_path, wri, 'w')
 
 
