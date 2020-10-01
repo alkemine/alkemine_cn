@@ -109,7 +109,7 @@ def run():
 
     wri = get_all_paper('\n'.join(final))
     a = '\\'.join(os.getcwd().split('\\')[:-1])
-    final_path = os.path.join(a, 'docs', 'publications_cite1111.html')
+    final_path = os.path.join(a, 'docs', 'publications_cite.html')
     write_post(final_path, wri, 'w')
 
 
