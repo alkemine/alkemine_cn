@@ -7,8 +7,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Main CSS -->
-        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
+<!--         <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+ -->        <link rel="stylesheet" href="css/style.css">
 
         <!-- Font Awesome -->
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -52,17 +52,18 @@
 			        			<a class="nav-link" href="publications.html">发表论文</a>
 			        	</li>
 
-			        	<li class="nav-item">
-						<a class="nav-link" href="project/index.html">研究领域</a>
-						</li>
+			        	
+                <li class="nav-item">
+                        <a class="nav-link" href="project/index.html"  >研究领域</a>
+                </li>
 
-						<li class="nav-item">
-								<a class="nav-link" href="#">联系我们</a>
-						</li>
+                <li class="nav-item">
+                        <a class="nav-link" href="contactus/index.html">联系我们</a>
+                </li>
 
-						<li class="nav-item">
-								<a class="nav-link" href="login/login.html">Login</a>
-						</li>
+                <li class="nav-item">
+                        <a class="nav-link" href="login/login.html" >Login</a>
+                </li>
 		        	</ul>
 
 	        	</div>
