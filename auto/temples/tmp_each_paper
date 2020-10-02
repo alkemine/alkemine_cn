@@ -1,11 +1,11 @@
 <li style="color:black">
 
 	<b>
-	 <span class="glyphicon glyphicon-hand-right"></span>
+	 <i class="fa fa-hand-o-right" aria-hidden="true"> </i>
 	 $cite_contene
 	  <a href="$href" target="_blank" style="color:#D98880; font-weight: 600">$doi</a>
         <a target="_blank" href="$local_pdf_path">
-          <span class="glyphicon glyphicon-download-alt"></span>
+          <i class="fa fa-download" aria-hidden="true"></i>
         </a>
 	</b>
 </li>

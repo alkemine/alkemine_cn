@@ -75,7 +75,7 @@ def read_data():
         else:
             pdf_path = 'login/login.html'
         if not (pdf_name in all_files):
-            print(pdf_name)
+            print("can't find:", pdf_name)
         
         vnp = []
         if str(tmp_i['volume，没有填-']).strip() != '-' and str(tmp_i['volume，没有填-']).strip() != '_':
