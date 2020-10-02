@@ -98,7 +98,9 @@ def read_data():
 def run():
     content = read_data()
     final = []
-    for i in range(2020, 1997, -1):
+    import datetime
+    num = datetime.datetime.now().year
+    for i in range(num+1, 1997, -1):
         # if i==2020:
         #     content['2020'] = [('loading', '......')]
 
