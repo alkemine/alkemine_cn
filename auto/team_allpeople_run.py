@@ -148,5 +148,5 @@ def run(teacher=1, phd=0, ungrad=0, domaster=0, graded=0):
 
 
 if __name__ == '__main__':
-    run(teacher=1, phd=1, ungrad=1, domaster=1, graded=1)
-    # run(teacher=0, phd=0, ungrad=0, domaster=1, graded=0)
+    # run(teacher=1, phd=1, ungrad=1, domaster=1, graded=1)
+    run(teacher=0, phd=0, ungrad=1, domaster=0, graded=0)
