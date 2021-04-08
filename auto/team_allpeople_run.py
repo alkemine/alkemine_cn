@@ -22,6 +22,7 @@ CN2EN = {"教师": "Teachers",
          "研究生2年级": "Master 2",
          "研究生3年级": "Master 3",
          "本科生": "Undergraduate",
+         "2020年已毕业学生": "Graduated",
          "2019年已毕业学生": "Graduated",
          "2018年之前已毕业学生": "Graduated"}
 
@@ -123,16 +124,20 @@ def run(teacher=1, phd=0, ungrad=0, domaster=0, graded=0):
     master2_dict = all_people['master2']
     master3_dict = all_people['master3']
     undergraduated_dict = all_people['undergraduated']
-    newgraduated_dict = all_people['graduatednew']
-    oldgraduated_dict = all_people['graduatedold']
+    
+    graduated2020_dict = all_people['graduated2020']
+    graduated2019_dict = all_people['graduated2019']
+    graduated2018_dict = all_people['graduated2018']
     
     master = [{"data_name": "硕士3年级", "web_name": "研究生3年级", "name_index": master3_dict, "is_wri": False},
               {"data_name": "硕士2年级", "web_name": "研究生2年级", "name_index": master2_dict, "is_wri": False},
               {"data_name": "硕士1年级", "web_name": "研究生1年级", "name_index": master1_dict, "is_wri": False}]
-    graduated = [{"data_name": "已毕业学生", "web_name": "2019年已毕业学生",
-                  "name_index": newgraduated_dict, "is_wri": False},
+    graduated = [{"data_name": "已毕业学生", "web_name": "2020年已毕业学生",
+                  "name_index": graduated2020_dict, "is_wri": False},
+                 {"data_name": "已毕业学生", "web_name": "2019年已毕业学生",
+                  "name_index": graduated2019_dict, "is_wri": False},
                  {"data_name": "已毕业学生", "web_name": "2018年之前已毕业学生",
-                  "name_index": oldgraduated_dict, "is_wri": False}]
+                  "name_index": graduated2018_dict, "is_wri": False}]
     
     if teacher:
         general(data_name="老师", web_name="教师", name_index=teach_dict, output_filename='../docs/teachers.html')
@@ -149,4 +154,4 @@ def run(teacher=1, phd=0, ungrad=0, domaster=0, graded=0):
 
 if __name__ == '__main__':
     # run(teacher=1, phd=1, ungrad=1, domaster=1, graded=1)
-    run(teacher=0, phd=0, ungrad=1, domaster=0, graded=0)
+    run(teacher=1, phd=1, ungrad=1, domaster=1, graded=1)
