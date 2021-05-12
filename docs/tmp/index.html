@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>ALKEMIE</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+<!--    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">-->
+    <link href="css/pe-icons.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/ico/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/ico/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/ico/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" href="images/ico/apple-touch-icon-57x57.png">
+
+    <script type="text/javascript">
+    jQuery(document).ready(function($){
+	'use strict';
+      	jQuery('body').backstretch([
+	        "images/bg/bg3.jpg",
+            "images/bg/bg2.jpg",
+            "images/bg/bg1.jpg",
+            "images/bg/bg5.jpg",
+	    ], {duration: 3000, fade: 500, centeredY: true});
+
+
+    });
+    </script>
+    <style>
+        top_title {font-family: "Arial"; font-size: 85px; font-weight:bold}
+        top_title_down {font-family: "Arial"; font-size: 35px}
+        top_first_down {font-family: "Arial"; font-size: 20px; } /*color:#BFC9CA*/
+        top_paper {font-family: "Arial"; font-size: 15px; color:#FFFFFF} /*color:#BFC9CA*/
+        captical {font-weight:bold; font-size: 40px; color:#f06060}
+        .first-word {font-weight:bold; font-size: 28px}
+
+        h2{font-size: 38px}
+        .sub-section-title {
+            font-family: Lato, sans-serif;
+            font-size: 16px;
+        }
+
+        /*object*/
+        /*{*/
+        /*    !*padding:5px 5px 5px 5px;*!*/
+        /*    !*border:3px;*!*/
+        /*    !*margin-left:10px;*!*/
+        /*    !*margin-right:10px;*!*/
+        /*    !*margin-top: 12px;*!*/
+        /*    !*margin-bottom: 12px;*!*/
+        /*    !*border-right: 3px;*!*/
+        /*}*/
+    </style>
+</head><!--/head-->
+<body>
+<div id="preloader"></div>
+<!--<div class="wgjspinner">-->
+<!--    <div class="wgjbounce1"></div>-->
+<!--    <div class="wgjbounce2"></div>-->
+<!--    <div class="wgjbounce3"></div>-->
+<!--</div>-->
+    <header class="navbar navbar-inverse navbar-fixed-top " role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+<!--                 <a class="navbar-brand" href="index.html"><h1><span class="pe-7s-science bounce-in"></span>ALKEMIE</h1></a>-->
+<!--                <a class="navbar-brand" href="index.html"><h1><object data="images/logo.svg" type="image/svg+xml"></object>ALKEMIE</h1></a>-->
+                <a class="navbar-brand" href="index.html"> <h1> <img width="35px" src="images/logo.svg" style="margin-bottom: 5px"></img>ALKEMIE </h1></a>
+
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://alkemine.cn" target="_blank">About Us</a></li>
+<!--                    <li><a href="services.html">Services</a></li>-->
+<!--                    <li><a href="portfolio.html">Portfolio</a></li>-->
+<!--                    <li><a href="blog.html">Blog</a></li>-->
+<!--                    <li><a href="contact-us.html">Contact</a></li>-->
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">目录 <i class="icon-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#alkemie-workflow-preview">平台概览</a></li>
+                            <li><a href="#AMDIV">设计理念</a></li>
+                            <li><a href="#IntergratedSoftwares">Skills</a></li>
+                            <li><a href="#PlatformInfo">基本信息</a></li>
+                            <li><a href="#Functions">功能特色</a></li>
+                            <li><a href="#DBInfo">数据库</a></li>
+                            <li><a href="#Papers">发表论文</a></li>
+                            <li><a href="#TeamMembers">团队成员</a></li>
+                            <li><a href="#WorkFlowList">工作流算例</a></li>
+                            <li class="active"><a href="https://alkemine.org" target="_blank">ALKEMIE使用手册</a></li>
+                            <li><a href="https://alkemine.cn" target="_blank">课题组官网</a></li>
+                        </ul>
+                    </li>
+<!--                    <li><span class="search-trigger"><i class="fa fa-search"></i></span></li>-->
+                </ul>
+            </div>
+        </div>
+    </header><!--/header-->
+
+    <section id="main-slider" class="no-margin">
+        <div class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="carousel-content center centered">
+<!--                                	<span class="home-icon pe-7s-gleam bounce-in"></span>-->
+                                    <top_title ><br>ALKEMIE<br></top_title>
+                                    <top_title_down class="animation animated-item-2 fade-up"><captical>A</captical>rtificial
+                                        <captical>L</captical>earning and <captical>K</captical>nowledge <captical>E</captical>nhanced <br>
+                                        <captical>M</captical>aterials <captical>I</captical>nformatics <captical>E</captical>ngineering</top_title_down>
+                                    <br>
+                                    <a class="text-right headname btn btn-md animation bounce-in"
+                                       href="https://alkemine.org/ApplyForTrial.html" target="_blank">Learn More</br><span class="pe-7s-paper-plane bounce-in"></span>申 请 试 用</a>
+                                    <br><br><br><br><br><br>
+<!--                                    <a href="https://linkinghub.elsevier.com/retrieve/pii/S0927025620305553" target="_blank" class="center-block">-->
+<!--                                        <top_paper>Wang, G., Peng, L., Li, K., Zhu, L., Zhou, J., Miao, N., & Sun, Z. (2021). ALKEMIE: An intelligent computational platform for-->
+<!--                                        <br> accelerating materials discovery and design. Computational Materials Science, 186, 110064-110074</top_paper> </a>-->
+                                    <top_first_down> <br><br> Developed by the Team of Professor Zhimei Sun. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Beihang University, Beijing, China.</top_first_down>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+            </div><!--/.carousel-inner-->
+        </div><!--/.carousel-->
+    </section><!--/#main-slider-->
+
+    <div id="content-wrapper">
+
+        <section id="alkemie-workflow-preview" class="white">
+            <div class="container">
+                <div class="gap"></div>
+                <div class="center gap fade-down section-heading">
+<!--                    <p class="main-title section-title">平台概览</p>-->
+                    <h2 class="main-title">ALKEMIE 平台概览</h2>
+                    <hr>
+                    <p class="sub-section-title">可视化高通量工作流.</p>
+                </div>
+                <div class="row">
+                    <div class="isotope fade-up">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="portfolio-item apps isotope-item">
+                                <div class="item-inner">
+                                <img src="images/portfolio/wf01.jpg" alt="">
+                                <h5>高通量自动流程及数据分析</h5>
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/wf01.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                </div>
+                            </div>
+                            </div><!--/.portfolio-item-->
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="portfolio-item joomla nature isotope-item">
+                                <div class="item-inner">
+                                    <img src="images/portfolio/wf02.jpg" alt="">
+                                    <h5>高通量自动建模、高通量计算、高通量数据分析</h5>
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary" href="images/portfolio/wf02.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div><!--/.portfolio-item-->
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="portfolio-item bootstrap design isotope-item">
+                                <div class="item-inner">
+                                    <img src="images/portfolio/wf03.jpg" alt="">
+                                    <h5>ALKEMIE基础架构</h5>
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary" href="images/portfolio/wf03.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div><!--/.portfolio-item-->
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="isotope fade-up">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="portfolio-item bootstrap design isotope-item">
+                            <div class="item-inner">
+                                <img src="images/portfolio/wf04.jpg" alt="">
+                                <h5>ALKEMIE平台特色</h5>
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/wf04.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                </div>
+                            </div>
+                            </div><!--/.portfolio-item-->
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="portfolio-item bootstrap design isotope-item">
+                                <div class="item-inner">
+                                    <img src="images/portfolio/wf05.jpg" alt="">
+                                    <h5>ALKEMIE高通量平台功能区（功能选择）和工作区（构建工作流）</h5>
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary" href="images/portfolio/wf05.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div><!--/.portfolio-item-->
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="portfolio-item bootstrap design isotope-item">
+                                <div class="item-inner">
+                                    <img src="images/portfolio/wf06.jpg" alt="">
+                                    <h5>ALKEMIE高通量平台登陆及欢迎界面</h5>
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary" href="images/portfolio/wf06.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div><!--/.portfolio-item-->
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="isotope fade-up">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="portfolio-item bootstrap design isotope-item">
+                                <div class="item-inner">
+                                    <img src="images/portfolio/wf07.jpg" alt="">
+                                    <h5>ALKEMIE自动工作流t</h5>
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary" href="images/portfolio/wf07.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div><!--/.portfolio-item-->
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="portfolio-item bootstrap design isotope-item">
+                                <div class="item-inner">
+                                    <img src="images/portfolio/wf08.jpg" alt="">
+                                    <h5>ALKEMIE高通量平台多种数据类型</h5>
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary" href="images/portfolio/wf08.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div><!--/.portfolio-item-->
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="portfolio-item bootstrap design isotope-item">
+                                <div class="item-inner">
+                                    <img src="images/portfolio/wf09.jpg" alt="">
+                                    <h5>ALKEMIE高通量平台多类型材料数据库</h5>
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary" href="images/portfolio/wf09.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div><!--/.portfolio-item-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-content center centered">
+                <a class="text-center headname btn btn-md animation bounce-in"
+                   href="https://alkemine.org/ApplyForTrial.html" target="_blank">Learn More</br><span class="pe-7s-paper-plane bounce-in"></span>申 请 试 用</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="AMDIV" class="white">
+            <div class="container"> <!--          设计理念-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="center gap fade-down section-heading">
+                            <h2 class="main-title">ALKEMIE 设计理念</h2>
+                            <hr>
+                            <p class="sub-section-title" style="font-weight: bold; font-size: 20px"> A M D I V</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+<!--                                <i class="fa-md"><object data="file.svg" type="image/svg+xml"></object></i>-->
+                                <i class="fa fa-spinner fa fa-md" aria-hidden="true"></i>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading"> <a class="first-word">A</a>utomation </h3>
+                                <p>材料基因工程的基本理念是变革传统的“试错法”材料研究模式，发展高效和协同创新的新型材料研发模式，使得新材料的研发周期缩短一半，研发成本降低一半，因此整个平台的自动化运行必不可少</p>
+<!--                                <ul>-->
+<!--                                    <li>自动化远程集群连接和管理</li>-->
+<!--                                    <li>自动化数据耦合</li>-->
+<!--                                    <li>科学工作流</li>-->
+<!--                                    <li>自动纠错</li>-->
+<!--                                </ul>-->
+<!--                                <p>Nay middleton him admitting consulted and behaviour son household. Recurred advanced he oh together entrance speedily suitable. Ready tried gay state fat could boy its among shall.</p>-->
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <i class="fa fa-thumbs-o-up fa fa-md"></i>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading"><a class="first-word">M</a>odular </h3>
+                                <p>为了兼容不同的计算模拟软件，不同的读写格式、不同的计算尺度和时间跨度，以及不同的数据库类型，模块化编程变得至关重要</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <i class="fa fa-ticket fa fa-md"></i>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading"><a class="first-word">D</a>atabase </h3>
+                                <p>对于高通量自动计算产生的海量数据，格式化的存储极为重要。基于欧洲科学家提出的FAIR Data的原则，数据应该满足可发现、可获取、可互操作和可再利用这四个特性</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                </div><!--/.row-->
+                <div class="gap"></div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <i class="fa fa-star fa fa-md"></i>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading"><a class="first-word">I</a>ntelligence </h3>
+                                <p>如何将人工智能的方法有效的应用到材料计算模拟中还需深入探索，包括描述符，机器学习数据集、算法和模型以及应用到的科学领域和具体科学问题</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <i class="fa fa-cogs fa fa-md"></i>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading"><a class="first-word">V</a>isualization </h3>
+                                <p>科研人员希望将精力集中于如何构建初始构型、创建高效自动的科学工作流和分析高质量的计算结果<br>
+                                    ALKEMIE用户友好的可视化操作界面，既可以使材料计算模拟的初学者快速使用，也可以使熟练掌握计算模拟的专业科研人员快速进行功能拓展</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+<!--                    <div class="col-md-4 col-sm-6">-->
+<!--                        <div class="service-block">-->
+<!--                            <div class="pull-left bounce-in">-->
+<!--                                <i class="fa fa-google-plus fa fa-md"></i>-->
+<!--                            </div>-->
+<!--                            <div class="media-body fade-up">-->
+<!--                                <h3 class="media-heading">SEO Services</h3>-->
+<!--                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>&lt;!&ndash;/.col-md-4&ndash;&gt;-->
+                </div><!--/.row-->
+            </div>  <!--  /* end 设计理念 */-->
+        </section>
+
+        <section id="IntergratedSoftwares" class="white">
+            <!--            集成模块-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="center gap fade-down section-heading">
+                            <h2 class="main-title">ALKEMIE已集成软件</h2>
+                            <hr>
+                            <p>Note：基于ALKEMIE软件全功能版本，部分模块需单独授权.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="tile-progress tile-red bounce-in">
+                            <div class="tile-header">
+                                <h3>VASP</h3>
+                                <span><a href="https://www.vasp.at" target="_blank">https://www.vasp.at</a></span>
+                            </div>
+                            <div class="tile-progressbar">
+                                <span data-fill="&nbsp" style="width: 80%;"></span>
+                            </div>
+<!--                            <div class="tile-footer">-->
+<!--                                <h4>-->
+<!--                                    <span class="pct-counter counter">65.5</span>%-->
+<!--                                </h4>-->
+<!--                            </div>-->
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="tile-progress tile-red bounce-in">
+                            <div class="tile-header">
+                                <h3>Lammps</h3>
+                                <span><a href="https://lammps.sandia.gov/" target="_blank">https://lammps.sandia.gov</a></span>
+                            </div>
+                            <div class="tile-progressbar">
+                                <span data-fill="&nbsp" style="width: 30%;"></span>
+                            </div>
+                            <!--                            <div class="tile-footer">-->
+                            <!--                                <h4>-->
+                            <!--                                    <span class="pct-counter counter">65.5</span>%-->
+                            <!--                                </h4>-->
+                            <!--                            </div>-->
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="tile-progress tile-red bounce-in">
+                            <div class="tile-header">
+                                <h3>Quantum Expresso</h3>
+                                <span><a href="https://www.quantum-espresso.org" target="_blank">https://www.quantum-espresso.org</a></span>
+                            </div>
+                            <div class="tile-progressbar">
+                                <span data-fill="&nbsp" style="width: 10%;"></span>
+                            </div>
+                            <!--                            <div class="tile-footer">-->
+                            <!--                                <h4>-->
+                            <!--                                    <span class="pct-counter counter">65.5</span>%-->
+                            <!--                                </h4>-->
+                            <!--                            </div>-->
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="tile-progress tile-red bounce-in">
+                            <div class="tile-header">
+                                <h3>Abinit</h3>
+                                <span><a href="https://www.abinit.org" target="_blank">https://www.abinit.org</a></span>
+                            </div>
+                            <div class="tile-progressbar">
+                                <span data-fill="&nbsp" style="width: 10%;"></span>
+                            </div>
+                            <!--                            <div class="tile-footer">-->
+                            <!--                                <h4>-->
+                            <!--                                    <span class="pct-counter counter">65.5</span>%-->
+                            <!--                                </h4>-->
+                            <!--                            </div>-->
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="tile-progress tile-red bounce-in">
+                            <div class="tile-header">
+                                <h3>CP2K</h3>
+                                <span><a href="https://www.cp2k.org" target="_blank">https://www.cp2k.org</a></span>
+                            </div>
+                            <div class="tile-progressbar">
+                                <span data-fill="&nbsp" style="width: 10%;"></span>
+                            </div>
+                            <!--                            <div class="tile-footer">-->
+                            <!--                                <h4>-->
+                            <!--                                    <span class="pct-counter counter">65.5</span>%-->
+                            <!--                                </h4>-->
+                            <!--                            </div>-->
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="tile-progress tile-red bounce-in">
+                            <div class="tile-header">
+                                <h3>OpenMX</h3>
+                                <span><a href="http://www.openmx-square.org" target="_blank">http://www.openmx-square.org</a></span>
+                            </div>
+                            <div class="tile-progressbar">
+                                <span data-fill="&nbsp" style="width: 5%;"></span>
+                            </div>
+                            <!--                            <div class="tile-footer">-->
+                            <!--                                <h4>-->
+                            <!--                                    <span class="pct-counter counter">65.5</span>%-->
+                            <!--                                </h4>-->
+                            <!--                            </div>-->
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="tile-progress tile-red bounce-in">
+                            <div class="tile-header">
+                                <h3>Gibbs2</h3>
+                                <span><a href="https://github.com/aoterodelaroza/gibbs2" target="_blank">https://github.com/aoterodelaroza/gibbs2</a></span>
+                            </div>
+                            <div class="tile-progressbar">
+                                <span data-fill="&nbsp" style="width: 5%;"></span>
+                            </div>
+                            <!--                            <div class="tile-footer">-->
+                            <!--                                <h4>-->
+                            <!--                                    <span class="pct-counter counter">65.5</span>%-->
+                            <!--                                </h4>-->
+                            <!--                            </div>-->
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="tile-progress tile-red bounce-in">
+                            <div class="tile-header">
+                                <h3>OpenPhase</h3>
+                                <span><a href="https://ma.issp.u-tokyo.ac.jp/en/app/693" target="_blank">https://ma.issp.u-tokyo.ac.jp/en/app/693</a></span>
+                            </div>
+                            <div class="tile-progressbar">
+                                <span data-fill="&nbsp" style="width: 5%;"></span>
+                            </div>
+                            <!--                            <div class="tile-footer">-->
+                            <!--                                <h4>-->
+                            <!--                                    <span class="pct-counter counter">65.5</span>%-->
+                            <!--                                </h4>-->
+                            <!--                            </div>-->
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="tile-progress tile-red bounce-in">
+                            <div class="tile-header">
+                                <h3>OpenCalphad</h3>
+                                <span><a href="http://www.opencalphad.com/" target="_blank">http://www.opencalphad.com/</a></span>
+                            </div>
+                            <div class="tile-progressbar">
+                                <span data-fill="&nbsp" style="width: 5%;"></span>
+                            </div>
+                            <!--                            <div class="tile-footer">-->
+                            <!--                                <h4>-->
+                            <!--                                    <span class="pct-counter counter">65.5</span>%-->
+                            <!--                                </h4>-->
+                            <!--                            </div>-->
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="tile-progress tile-red bounce-in">
+                            <div class="tile-header">
+                                <h3>shlda-1/2</h3>
+                                <span><a href="http://www.eedevice.com/dft-half/" target="_blank">华科薛堪豪老师自主软件（点击跳转）</a></span>
+                            </div>
+                            <div class="tile-progressbar">
+                                <span data-fill="&nbsp" style="width: 100%;"></span>
+                            </div>
+                            <!--                            <div class="tile-footer">-->
+                            <!--                                <h4>-->
+                            <!--                                    <span class="pct-counter counter">65.5</span>%-->
+                            <!--                                </h4>-->
+                            <!--                            </div>-->
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="tile-progress tile-red bounce-in">
+                            <div class="tile-header">
+                                <h3>Potential Mind</h3>
+                                <span><a href="#IntergratedSoftwares" target="_blank">自主开发的软件</a></span>
+                            </div>
+                            <div class="tile-progressbar">
+                                <span data-fill="&nbsp" style="width: 100%;"></span>
+                            </div>
+                            <!--                            <div class="tile-footer">-->
+                            <!--                                <h4>-->
+                            <!--                                    <span class="pct-counter counter">65.5</span>%-->
+                            <!--                                </h4>-->
+                            <!--                            </div>-->
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="tile-progress tile-red bounce-in">
+                            <div class="tile-header">
+                                <h3>PyGace</h3>
+                                <span><a href="#IntergratedSoftwares" target="_blank">自主开发的软件</a></span>
+                            </div>
+                            <div class="tile-progressbar">
+                                <span data-fill="&nbsp" style="width: 100%;"></span>
+                            </div>
+                            <!--                            <div class="tile-footer">-->
+                            <!--                                <h4>-->
+                            <!--                                    <span class="pct-counter counter">65.5</span>%-->
+                            <!--                                </h4>-->
+                            <!--                            </div>-->
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="tile-progress tile-red bounce-in">
+                            <div class="tile-header">
+                                <h3>KMC diffusion calculator</h3>
+                                <span><a href="#IntergratedSoftwares" target="_blank">自主开发的软件</a></span>
+                            </div>
+                            <div class="tile-progressbar">
+                                <span data-fill="&nbsp" style="width: 100%;"></span>
+                            </div>
+                            <!--                            <div class="tile-footer">-->
+                            <!--                                <h4>-->
+                            <!--                                    <span class="pct-counter counter">65.5</span>%-->
+                            <!--                                </h4>-->
+                            <!--                            </div>-->
+                        </div>
+                    </div>
+                </div><!--/.row-->
+                <div class="gap"></div>
+            </div>
+            <!--           end 集成模块-->
+        </section>
+
+        <section id="PlatformInfo" class="divider-section">
+            <div class="center gap fade-down section-heading">
+                <!--                    <p class="main-title section-title">平台概览</p>-->
+                <h2 style="font-size: 30px">ALKEMIE 平台基本信息</h2>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-6">
+                        <div class="center bounce-in">
+                            <span class="stat-icon"><span class="pe-7s-box2 bounce-in"></span></span>
+                            <h1><span class="counter">18</span></h1>
+                            <h3>插件</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="center bounce-in">
+                            <span class="stat-icon"><span class="pe-7s-light bounce-in"></span></span>
+                            <h1><span class="counter">155</span></h1>
+                            <h3>功能</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="center bounce-in">
+                            <span class="stat-icon"><span class="pe-7s-user bounce-in"></span></span>
+                            <h1><span class="counter">65</span></h1>
+                            <h3>用户</h3>
+                        </div>
+                    </div><div class="col-md-3 col-xs-6">
+                        <div class="center bounce-in">
+                            <span class="stat-icon"><span class="pe-7s-graph1 bounce-in"></span></span>
+                            <h1><span class="counter">1292</span></h1>
+                            <h3>Commit</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="gap"></div>
+            <div class="carousel-content center centered">
+                <a class="text-center headname btn btn-md animation bounce-in"
+                   href="https://alkemine.org/ApplyForTrial.html" target="_blank">Learn More</br><span class="pe-7s-paper-plane bounce-in"></span>申 请 试 用</a>
+            </div>
+        </section>
+
+        <section id="Functions" class="white">
+            <div class="container">   <!--   /* 功能列表 */-->
+                <div class="gap"></div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="center gap fade-down section-heading">
+                            <h2 class="main-title">ALKEMIE 功能特色</h2>
+                            <hr>
+                            <p class="sub-section-title">基于ALKEMIE软件最新版本: Alkemiems-2021.04.20.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <i class="fa fa-spinner fa fa-md-blue" aria-hidden="true"></i>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">高通量</h3>
+                                <p>ALKEMIE可以管理单用户超过10000量级的高通量计算任务</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <i class="fa fa-thumbs-o-up fa fa-md-blue"></i>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">自动化</h3>
+                                <p>高通量工作流从建模、计算到数据分析全程自动运行无需人工干预，运行过程可以采用默认参数，也可用户自定义参数</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <i class="fa fa-ticket fa fa-md-blue"></i>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">可视化</h3>
+                                <p>用户友好的可视化界面，使得高通量内部的工作流程和数据传递方式更加透明，操作更加便捷，方便具有不同材料知识背景的用户使用</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                </div><!--/.row-->
+                <div class="gap"></div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <i class="fa fa-star fa fa-md-blue"></i>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">工作流</h3>
+                                <p>多种计算软件的科学工作流，将用户从繁琐甚至困难的计算流程中解放出来，极大提高了计算和工作效率</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <i class="fa fa-cogs fa fa-md-blue"></i>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">数据库</h3>
+                                <p>多种类型的材料数据库，包括材料结构数据库、工作流数据库、材料性质数据库、文件数据库、适用于机器学习的结构描述符数据库等</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <i class="fa fa-cogs fa fa-md-blue"></i>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">机器学习</h3>
+                                <p>基于scikit-learn、PyTorch和TensorFlow等多种通用的机器学习工具开发了适用于材料结构能量预测、原子受力预测和带隙预测的模型，并为模型的进一步开发和应用定制了统一的底层接口</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                </div><!--/.row-->
+                <div class="gap"></div>
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <i class="fa fa-cogs fa fa-md-blue"></i>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">插件模式</h3>
+                                <p>以插件模式集成添加多尺度不同功能的计算模块，目前已添加多个不同尺度的计算软件</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <i class="fa fa-cogs fa fa-md-blue"></i>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">可移植</h3>
+                                <p>Windows、Linux、Mac OS等多个操作系统</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <i class="fa fa-cogs fa fa-md-blue"></i>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">可扩展</h3>
+                                <p>支持VASP、LAMMPS等计算，接口易于扩展</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                </div>
+                <div class="gap"></div>
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <i class="fa fa-cogs fa fa-md-blue"></i>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">跨尺度</h3>
+                                <p>集成了第一原理计算（VASP）、分子动力学模拟（LAMMPS）、热力学计算（GIBBS2）、动态蒙特卡洛模拟（kinetic_mc）和介观尺度相场模拟（Openphase）的相关软件，可实现单一尺度及跨尺度计算功能</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                </div>
+
+            </div>  <!--   /* end 功能列表 */-->
+
+        </section>
+
+        <section id="DBInfo" class="divider-section">
+            <div class="center gap fade-down section-heading">
+                <!--                    <p class="main-title section-title">平台概览</p>-->
+                <h2 style="font-size: 30px">ALKEMIE 数据库统计</h2>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-6">
+                        <div class="center bounce-in">
+                            <span class="stat-icon"><span class="pe-7s-box2 bounce-in"></span></span>
+                            <h1><span class="counter">12</span></h1>
+                            <h3>数据库类型</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="center bounce-in">
+                            <span class="stat-icon"><span class="pe-7s-graph1 bounce-in"></span></span>
+                            <h1><span class="counter">10123</span></h1>
+                            <h3>声子能带</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="center bounce-in">
+                            <span class="stat-icon"><span class="pe-7s-user bounce-in"></span></span>
+                            <h1><span class="counter">统计中...</span></h1>
+                            <h3>电子结构</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="center bounce-in">
+                            <span class="stat-icon"><span class="pe-7s-light bounce-in"></span></span>
+                            <h1><span class="counter">642394</span></h1>
+                            <h3>材料结构</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gap"></div>
+            <div class="carousel-content center centered">
+                <a class="text-center headname btn btn-md animation bounce-in"
+                   href="https://alkemine.org/ApplyForTrial.html" target="_blank">Learn More</br><span class="pe-7s-paper-plane bounce-in"></span>申 请 试 用</a>
+            </div>
+        </section>
+
+<!--        <section id="Papers" class="white">-->
+<!--        	<div class="container">-->
+<!--	            <div class="gap"></div>-->
+<!--	            <div class="row">-->
+<!--	                <div class="col-md-12">-->
+<!--	                    <div class="center gap fade-down section-heading">-->
+<!--	                        <h2 class="main-title">Published Papers</h2>-->
+<!--	                        <hr>-->
+<!--	                        <p></p>-->
+<!--	                    </div>-->
+<!--	                </div>-->
+<!--	            </div>-->
+<!--	            <div class="row">-->
+<!--	                <div class="col-md-10 col-md-offset-1 fade-up">-->
+<!--	                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>-->
+
+<!--	                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>-->
+<!--	                </div>-->
+<!--	                <div class="col-md-4 fade-up">-->
+
+<!--	                </div>-->
+<!--	            </div>-->
+<!--               <div class="gap"></div>-->
+<!--                <div class="row fade-up">-->
+<!--                    <div class="col-md-6">-->
+<!--                      	<div class="testimonial-list-item">-->
+<!--                        <img class="pull-left img-responsive quote-author-list" src="images/team/pic1.jpg">-->
+<!--                            <blockquote>-->
+<!--                                <p>Paper 1.</p>-->
+<!--                                <small> <cite title="Source Title">Company</cite></small>-->
+<!--                            </blockquote>-->
+<!--                        </div>-->
+<!--                        <div class="testimonial-list-item">-->
+<!--                        <img class="pull-left img-responsive quote-author-list" src="images/team/pic1.jpg">-->
+<!--                            <blockquote>-->
+<!--                                <p>Paper 2.</p>-->
+<!--                                <small>Manager at <cite title="Source Title">Company</cite></small>-->
+<!--                            </blockquote>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-6">-->
+<!--                        <div class="testimonial-list-item">-->
+<!--                        <img class="pull-left img-responsive quote-author-list" src="images/team/pic1.jpg">-->
+<!--                            <blockquote>-->
+<!--                                <p>Paper 3.</p>-->
+<!--                                <small>Manager at <cite title="Source Title">Company</cite></small>-->
+<!--                            </blockquote>-->
+<!--                        </div>-->
+<!--                        <div class="testimonial-list-item">-->
+<!--                        <img class="pull-left img-responsive quote-author-list" src="images/team/pic1.jpg">-->
+<!--                            <blockquote>-->
+<!--                                <p>Paper 4.</p>-->
+<!--                                <small>Manager at <cite title="Source Title">Company</cite></small>-->
+<!--                            </blockquote>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--            </div>-->
+<!--        </section>-->
+
+        <section id="TeamMembers" class="white">
+            <div class="container">
+
+                <div class="gap"></div>
+                <div class="center gap fade-down section-heading">
+                    <h2 class="main-title">团队成员</h2>
+                    <hr>
+                    <p>北京航空航天大学.</p>
+                </div>
+                <div class="gap"></div>
+
+                <div id="meet-the-team" class="row">
+                    <div class="col-md-2 col-xs-12">
+                        <div class="center team-member">
+                            <div class="team-image">
+                                <img class="img-responsive img-thumbnail bounce-in" src="images/team/ZhimeiSun.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="images/team/ZhimeiSun.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-content fade-up">
+                                <h5>孙志梅<small class="role muted">教  授</small></h5>
+                                <p><br></p>
+                                <a class="btn btn-social btn-facebook" href="#TeamMembers"><i class="fa fa-facebook"></i></a>
+                                <a class="btn btn-social btn-google-plus" href="#TeamMembers"><i class="fa fa-google-plus"></i></a>
+                                <a class="btn btn-social btn-twitter" href="#TeamMembers"><i class="fa fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 col-xs-12">
+                        <div class="center team-member">
+                            <div class="team-image">
+                                <img class="img-responsive img-thumbnail bounce-in" src="images/team/JianZhou.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="images/team/JianZhou.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-content fade-up">
+                                <h5>周  健<small class="role muted">研究员</small></h5>
+                                <p><br></p>
+                                <a class="btn btn-social btn-facebook" href="#TeamMembers"><i class="fa fa-facebook"></i></a>
+                                <a class="btn btn-social btn-google-plus" href="#TeamMembers"><i class="fa fa-google-plus"></i></a>
+                                <a class="btn btn-social btn-twitter" href="#TeamMembers"><i class="fa fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-12">
+                        <div class="center team-member">
+                            <div class="team-image">
+                                <img class="img-responsive img-thumbnail bounce-in" src="images/team/NaihuaMIAO.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="images/team/NaihuaMIAO.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-content fade-up">
+                                <h5>缪奶华<small class="role muted">副教授</small></h5>
+                                <p><br></p>
+                                <a class="btn btn-social btn-facebook" href="#TeamMembers"><i class="fa fa-facebook"></i></a>
+                                <a class="btn btn-social btn-google-plus" href="#TeamMembers"><i class="fa fa-google-plus"></i></a>
+                                <a class="btn btn-social btn-twitter" href="#TeamMembers"><i class="fa fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-12">
+                        <div class="center team-member">
+                            <div class="team-image">
+                                <img class="img-responsive img-thumbnail bounce-in" src="images/team/LinggangZhu.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="images/team/LinggangZhu.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-content fade-up">
+                                <h5>祝令刚<small class="role muted">副教授</small></h5>
+                                <p><br></p>
+                                <a class="btn btn-social btn-facebook" href="#TeamMembers"><i class="fa fa-facebook"></i></a>
+                                <a class="btn btn-social btn-google-plus" href="#TeamMembers"><i class="fa fa-google-plus"></i></a>
+                                <a class="btn btn-social btn-twitter" href="#TeamMembers"><i class="fa fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-12">
+                        <div class="center team-member">
+                            <div class="team-image">
+                                <img class="img-responsive img-thumbnail bounce-in" src="images/team/pic1.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="images/team/pic1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-content fade-up">
+                                <h5><br><small class="role muted"> <br></small></h5>
+                                <p>  <br></p>
+                                <!--                                <a class="btn btn-social btn-facebook" href="#"><i class="fa fa-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="fa fa-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="fa fa-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="fa fa-linkedin"></i></a>-->
+                                <div class="carousel-content center centered">
+                                    <a class="text-center headname btn btn-md animation bounce-in"
+                                       href="https://alkemine.cn/phds.html" target="_blank">查看更多</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-12">
+                        <div class="center team-member">
+                            <div class="team-image">
+                                <img class="img-responsive img-thumbnail bounce-in" src="images/team/pic1.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-outlined btn-primary" href="images/team/pic1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-content fade-up">
+                                <h5><br><small class="role muted"> <br></small></h5>
+                                <p>  <br></p>
+                                <!--                                <a class="btn btn-social btn-facebook" href="#"><i class="fa fa-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="fa fa-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="fa fa-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="fa fa-linkedin"></i></a>-->
+                                <div class="carousel-content center centered">
+                                    <a class="text-center headname btn btn-md animation bounce-in"
+                                       href="https://alkemine.cn/phds.html" target="_blank">查看更多</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!--/#meet-the-team-->
+                <div class="gap"></div>
+                <div class="carousel-content center centered">
+                    <a class="text-center headname btn btn-md animation bounce-in"
+                       href="https://alkemine.org/ApplyForTrial.html" target="_blank">Learn More</br><span class="pe-7s-paper-plane bounce-in"></span>申 请 试 用</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="WorkFlowList" class="white">
+       		<div class="container">
+	        	<div class="gap"></div>
+		        	<div class="center gap fade-down section-heading">
+		                <h2 class="main-title">Examples Of Workflows</h2>
+		                <hr>
+		                <p>Note：基于ALKEMIE软件全功能版本，部分模块需单独授权.</p>
+		            </div>
+<!--                    <ul class="portfolio-filter fade-down center">-->
+<!--                        <li><a class="btn btn-outlined btn-primary active" href="#" data-filter="*">All</a></li>-->
+<!--                        <li><a class="btn btn-outlined btn-primary" href="#" data-filter=".vasp">VASP</a></li>-->
+<!--                        <li><a class="btn btn-outlined btn-primary" href="#" data-filter=".analyze">Analyze</a></li>-->
+<!--                        <li><a class="btn btn-outlined btn-primary" href="#" data-filter=".ml">ML</a></li>-->
+<!--                    </ul>&lt;!&ndash;/#portfolio-filter&ndash;&gt;-->
+
+                <div class="row">
+                    <div class="isotope fade-up">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="portfolio-item vasp isotope-item">
+                                <div class="item-inner">
+                                    <img src="images/portfolio/folio01.jpg" alt="">
+                                    <h5>结构查询，高通量计算和数据分析工作流</h5>
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio01.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div><!--/.portfolio-item-->
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="portfolio-item joomla nature isotope-item">
+                                <div class="item-inner">
+                                    <img src="images/portfolio/folio02.jpg" alt="">
+                                    <h5>高通量建模、高通量计算和高通量数据分析工作流</h5>
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio02.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div><!--/.portfolio-item-->
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="portfolio-item bootstrap design isotope-item">
+                                <div class="item-inner">
+                                    <img src="images/portfolio/folio03.jpg" alt="">
+                                    <h5>机器学习势函数工作流</h5>
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio03.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div><!--/.portfolio-item-->
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="isotope fade-up">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="portfolio-item bootstrap design isotope-item">
+                                <div class="item-inner">
+                                    <img src="images/portfolio/folio04.jpg" alt="">
+                                    <h5>DFT与Gibbs交互工作流</h5>
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio04.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div><!--/.portfolio-item-->
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="portfolio-item bootstrap design isotope-item">
+                                <div class="item-inner">
+                                    <img src="images/portfolio/folio05.jpg" alt="">
+                                    <h5>电子结构计算工作流</h5>
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio05.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div><!--/.portfolio-item-->
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="portfolio-item bootstrap design isotope-item">
+                                <div class="item-inner">
+                                    <img src="images/portfolio/folio06.jpg" alt="">
+                                    <h5>OpenPhase算例工作流</h5>
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio06.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div><!--/.portfolio-item-->
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="isotope fade-up">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="portfolio-item bootstrap design isotope-item">
+                                <div class="item-inner">
+                                    <img src="images/portfolio/cs.jpg" alt="">
+                                    <h5>正在添加中...</h5>
+                                    <div class="overlay">
+                                        <a class="preview btn btn-outlined btn-primary" href="images/portfolio/cs.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div><!--/.portfolio-item-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-content center centered">
+                    <a class="text-center headname btn btn-md animation bounce-in"
+                       href="https://alkemine.org/ApplyForTrial.html" target="_blank">Learn More</br><span class="pe-7s-paper-plane bounce-in"></span>申 请 试 用</a>
+                </div>
+            </div>
+            </section>
+
+        </div>
+
+    <div id="footer-wrapper">
+        <section id="bottom" class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 about-us-widget">
+                        <h4>ALKEMIE</h4>
+                        <p>Artificial Learning and Knowledge Enhanced Materials Informatics Engineering</p>
+
+                        <div class="carousel-content center centered">
+                            <a class="text-center headname btn btn-md animation bounce-in"
+                               href="https://alkemine.org/ApplyForTrial.html" target="_blank">Learn More</br><span class="pe-7s-paper-plane bounce-in"></span>申 请 试 用</a>
+                        </div>
+
+                    </div><!--/.col-md-3-->
+
+                    <div class="col-md-3 col-sm-6">
+                        <h4>快速链接</h4>
+                        <div>
+                            <ul class="arrow">
+                                <li><a href="#alkemie-workflow-preview">平台概览</a></li>
+                                <li><a href="#AMDIV">设计理念</a></li>
+                                <li><a href="#Functions">功能列表</a></li>
+                                <li><a href="#Papers">发表论文</a></li>
+                            </ul>
+                        </div>
+                    </div><!--/.col-md-3-->
+
+                    <div class="col-md-3 col-sm-6">
+                        <h4>Latest Articles</h4>
+                        <div>
+                            <div class="media">
+                                <div class="pull-left">
+                                    <img class="widget-img" src="images/portfolio/folio01.jpg" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <span class="media-heading"><a href="https://linkinghub.elsevier.com/retrieve/pii/S0927025620305553" target="_blank"> ALKEMIE: An intelligent computational platform ...</a></span>
+                                    <small class="muted">Wang, Guanjie, Zhimei Sun, et al. Computational Materials Science 186 (2021): 110064. </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-3-->
+
+                    <div class="col-md-3 col-sm-6">
+                        <h4>Contact Us</h4>
+                        <address>
+                            <p><strong>微信公众号</strong></p>
+                            <p>ALKEMINE </p>
+                            <p><strong>网站链接</strong></p>
+                            <a href="https://alkemine.cn" target="_blank">https://alkemine.cn</a>
+                            <a href="https://alkemine.org" target="_blank">https://alkemine.org</a>
+<!--                            <abbr title="Phone"><i class="fa fa-phone"></i></abbr> 546 840654 05-->
+                        </address>
+                    </div> <!--/.col-md-3-->
+                </div>
+            </div>
+        </section><!--/#bottom-->
+
+        <footer id="footer" class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        Copyright &copy; 2016-2025. ALKEMIE All rights reserved.
+                    </div>
+                    <div class="col-sm-4">
+                        <ul class="pull-right">
+                            <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up"></i> Back to top</a></li><!--#gototop-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer><!--/#footer-->
+    </div>
+
+
+    <script src="js/plugins.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    
+    <script src="js/init.js"></script>
+</body>
+</html>
