@@ -56,7 +56,13 @@ def get_one_paper(cite_contene, href, pdf_path="#"):
 
 def read_data():
     import pandas as pd
-    a = pd.read_csv('prof-sun-all-paper-2020.csv')
+    try:
+        a = pd.read_csv('prof-sun-all-paper-2021.csv')
+    except UnicodeDecodeError as e:
+        print(e)
+        print("Use notepad++ convert encoding to UTF8-BOM")
+        exit()
+        
     format_str = '%s, %s, %s. %s (%s).'
     lll = defaultdict(list)
     # __pdf_path = os.path.join('\\'.join(os.getcwd().split('\\')[:-1]), 'docs', 'publications', pdf_name)
@@ -100,7 +106,7 @@ def run():
     final = []
     import datetime
     num = datetime.datetime.now().year
-    for i in range(num+1, 1997, -1):
+    for i in range(num, 1997, -1):
         # if i==2020:
         #     content['2020'] = [('loading', '......')]
 
