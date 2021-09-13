@@ -125,5 +125,5 @@ def run():
 
 
 if __name__ == '__main__':
-    ADDED = False
+    ADDED = True
     run()
