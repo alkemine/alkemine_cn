@@ -56,33 +56,50 @@ def get_one_paper(cite_contene, href, pdf_path="#"):
 
 def read_data():
     import pandas as pd
-    try:
-        a = pd.read_csv('prof-sun-all-paper-2021.csv')
-    except UnicodeDecodeError as e:
-        print(e)
-        print("Use notepad++ convert encoding to UTF8-BOM")
-        exit()
-        
+    # try:
+    #     a = pd.read_csv('copy.csv')
+    # except UnicodeDecodeError as e:
+    #     print(e)
+    #     print("Use notepad++ convert encoding to UTF8-BOM")
+    #     exit()
+    
+    # import xlrd
+    # a = xlrd.open_workbook('copy.xlsx')
+    # a = a.sheet_by_index(0)
+    # print(a.nrows)
+    a = pd.read_excel('copy_allpapers_from_tencentexcel.xlsx')
+    # print(a.head())
+    # print([print(i) for i in a.iterrows()])
+    # exit()
+    
     format_str = '%s, %s, %s. %s (%s).'
     lll = defaultdict(list)
     # __pdf_path = os.path.join('\\'.join(os.getcwd().split('\\')[:-1]), 'docs', 'publications', pdf_name)
     __pdf_path = os.path.join('\\'.join(os.getcwd().split('\\')[:-1]), 'docs', 'publications')
 
     all_files = os.listdir(__pdf_path)
+    tmp_ddd = []
     for i in a.iterrows():
         tmp_i = i[1]
         year = str(tmp_i['年份']).strip()
         all_authors = ', '.join(str(tmp_i['所有作者（以英文逗号隔开）']).strip().split(','))
         title = ' '.join(str(tmp_i['题目']).strip().split('_'))
         pdf_name = str(tmp_i['pdf全称（pdf中空格替换为英文下划线_）']).strip()
-        pdf_name =  pdf_name + '.pdf' if not str(pdf_name).endswith('.pdf') else pdf_name
+        pdf_name = pdf_name + '.pdf' if not str(pdf_name).endswith('.pdf') else pdf_name
         if ADDED:
             pdf_path = 'publications/%s' % pdf_name
         else:
             pdf_path = 'login/login.html'
+        
         if not (pdf_name in all_files):
             print("can't find:", pdf_name)
-        
+        else:
+            if pdf_name in tmp_ddd:
+                print(pdf_name)
+            # else:
+            #     os.remove(os.path.join(__pdf_path, pdf_name))
+            tmp_ddd.append(pdf_name)
+            
         vnp = []
         if str(tmp_i['volume，没有填-']).strip() != '-' and str(tmp_i['volume，没有填-']).strip() != '_':
             vnp.append(str(tmp_i['volume，没有填-']).strip()),
@@ -125,5 +142,6 @@ def run():
 
 
 if __name__ == '__main__':
-    ADDED = True
+    # 是否添加pdf附件
+    ADDED = False
     run()
