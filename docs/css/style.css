@@ -6555,6 +6555,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #666666;
   font-weight: bold; }
 
+h6 {
+  color: #f8f9fa; }
+
 h3 {
   color: #e47b83; }
 
