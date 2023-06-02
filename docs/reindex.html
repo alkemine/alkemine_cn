@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>alkemie.cloud</title>
+    <link rel="icon" href="alkemiems.ico" type="image/x-icon">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+/*            background: linear-gradient(to bottom, #87CEFA, #1E90FF);*/
+            background-image: url('background.jpg');
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-family: Georgia, sans-serif;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            font-family: Georgia, serif;
+            color: #666;
+        }
+        .button {
+            font-family: Georgia, sans-serif;
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #008CBA; /* Blue color */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            font-family: Georgia, sans-serif;
+            background-color: #007B9A; /* Darker blue */
+        }
+        .countdown {
+            font-family: Georgia, sans-serif;
+            color: #333;
+            margin-top: 20px;
+            font-size: 20px;
+ }
+    </style>
+</head>
+<body>
+    <div class="container" >
+
+        <h1>This website has been migrated to <a href="http://alkemie.cloud" style="color: #BA4A00;"> http://alkemie.cloud </a></h1>
+
+        <p>Thank you for your ongoing support. We eagerly anticipate the opportunity to serve you on our new site.</p>
+        <a href="http://alkemie.cloud" class="button">Visit new website now</a>
+        <p class="countdown" style="color: #BA4A00; font-weight: bold;">Automatically redirecting in 10 seconds...</p>
+    </div>
+    <script>
+        let countdownElement = document.querySelector('.countdown');
+        let countdownValue = 30;
+
+        let countdownInterval = setInterval(function() {
+            countdownValue--;
+            countdownElement.innerText = "Automatically redirecting in " + countdownValue + " seconds...";
+
+            if (countdownValue <= 0) {
+                clearInterval(countdownInterval);
+                window.location.href = 'http://alkemie.cloud';
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
