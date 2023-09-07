@@ -158,19 +158,19 @@ def run(teacher=1, phd=0, ungrad=0, domaster=0, graded=0):
                   "name_index": graduated2017_dict, "is_wri": False},
                  {"data_name": "已毕业学生", "web_name": "2016年之前已毕业学生",
                   "name_index": graduated2016_dict, "is_wri": False}]
-    
+    head_dir = 'old_docs'
     if teacher:
-        general(data_name="老师", web_name="教师", name_index=teach_dict, output_filename='../docs/teachers.html')
+        general(data_name="老师", web_name="教师", name_index=teach_dict, output_filename='../%s/teachers.html' % head_dir)
     if phd:
         # general(data_name="博士生", name_index=phd_dict, output_filename='../docs/phds.html')
-        deal_many_part(phd_and_postdoc, output_filename='../docs/phds.html')
+        deal_many_part(phd_and_postdoc, output_filename='../%s/phds.html' % head_dir)
     if ungrad:
         general(data_name="本科生", web_name="本科生", name_index=undergraduated_dict,
-                output_filename='../docs/undergraduates.html')
+                output_filename='../%s/undergraduates.html' % head_dir)
     if domaster:
-        deal_many_part(master, output_filename='../docs/masters.html')
+        deal_many_part(master, output_filename='../%s/masters.html' % head_dir)
     if graded:
-        deal_many_part(graduated, output_filename='../docs/graduated.html')
+        deal_many_part(graduated, output_filename='../%s/graduated.html' % head_dir)
 
 
 if __name__ == '__main__':
